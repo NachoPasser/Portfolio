@@ -11,29 +11,29 @@ const upAndDown = keyframes`
 
 function Home() {
   return (
-    <Flex h='100vh' flexDirection={'column'} justify='center'>
+    <Flex as='section' id='home' h='100vh' flexDirection={'column'} justify='center'>
         <Flex flexDir={'column'} align='center' gap={5}>
             <Flex flexDir={'column'} gap={2} w='fit-content' align={'center'}>
                 <Heading as={'h1'} size='4xl' fontWeight={600} lineHeight='1.1' color={'#00fff7'} textAlign={{base: 'center', md: 'left', lg: 'left', xl: 'left', '2xl': 'left'}}>Ignacio Passerini</Heading>
                 <Flex flexDir='column' w={'fit-content'} gap={5}>
                     <Heading as={'h2'} size='lg' fontWeight={600} textAlign={{base: 'center', md: 'left', lg: 'left', xl: 'left', '2xl': 'left'}} justifySelf='flex-start'>Desarrollador Full Stack</Heading>
                     <Flex justify={'space-between'} alignItems='center'>
-                        <a href="https://www.linkedin.com/in/ignacio-passerini/">
-                        <FaLinkedin
-                        className='hover'
-                        size={30}
-                        stroke='currentColor'
-                        fill='currentColor'
-                        />
+                        <a href="https://www.linkedin.com/in/ignacio-passerini/" target="_blank">
+                          <FaLinkedin
+                          className='hover'
+                          size={30}
+                          stroke='currentColor'
+                          fill='currentColor'
+                          />
                         </a>
-                        <Button background={'#FCFBFE'} border='1px solid #00fff7' _hover={{background: '#00fff7', color:'#FCFBFE'}} color='#00fff7' w={'fit-content'} transition='ease-in-out 0.3s'>Contactame</Button>
-                        <a href="https://github.com/NachoPasser">
-                        <FaGithub
-                        className='hover'
-                        size={30}
-                        stroke='currentColor'
-                        fill='currentColor'
-                        />
+                        <Button background={'#FCFBFE'} border='1px solid #00fff7' _hover={{background: '#00fff7', color:'#FCFBFE'}} color='#00fff7' w={'fit-content'}>Contactame</Button>
+                        <a href="https://github.com/NachoPasser" target="_blank">
+                          <FaGithub
+                          className='hover'
+                          size={30}
+                          stroke='currentColor'
+                          fill='currentColor'
+                          />
                         </a>
                     </Flex>
                 </Flex>

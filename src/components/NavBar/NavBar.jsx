@@ -7,6 +7,7 @@ import {BiMoon} from 'react-icons/bi'
 import {FaRegCommentDots} from 'react-icons/fa'
 import './NavBar.css'
 import logo from '/icon.png'
+import { Link } from 'react-scroll'
 
 function NavBar() {
     const [hidden, setHidden] = useState('none')
@@ -36,55 +37,66 @@ function NavBar() {
     }, [hidden])
 
     return (
-        <Flex as='nav' position={'fixed'} backgroundColor='white' w='100vw' h='72px' align={'center'} zIndex='100' boxShadow={'0 2px 4px 0 rgba(0,255,247,.3)'} >
-            <Grid ref={menu} display={hidden} alignItems='center' justifyItems={'center'} fontSize={{base:'13px', sm:'17px'}} position={'absolute'} top='0px' w='100vw' gridTemplateRows={'72px 72px'} gridTemplateColumns='repeat(3, 1fr)' backgroundColor='white' animation={!closing ? `${slideDown} 200ms forwards`: `${slideUp} 200ms forwards`} fontWeight='600' boxShadow={'0 2px 4px 0 rgba(0,255,247,.3)'}>
+        <Flex as='nav' position={'fixed'} backgroundColor='white' w='100%' h='72px' align={'center'} zIndex='100' boxShadow={'0 2px 4px 0 rgba(0,255,247,.3)'} >
+            <Grid ref={menu} display={hidden} alignItems='center' justifyItems={'center'} fontSize={{base:'13px', sm:'17px'}} position={'absolute'} top='0px' w='100%' gridTemplateRows={'72px 72px'} gridTemplateColumns='repeat(3, 1fr)' backgroundColor='white' animation={!closing ? `${slideDown} 200ms forwards`: `${slideUp} 200ms forwards`} fontWeight='600' boxShadow={'0 2px 4px 0 rgba(0,255,247,.3)'} style={{scrollbarGutter: 'stable'}}>
                 <GridItem gridArea={'1 / 1 / 2 / 2'}>
-                    <Flex className='hover' border={'1px solid black'} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'}>
-                        <AiOutlineHome
-                        size={20}
-                        stroke='currentColor'
-                        fill='currentColor'/>
-                        <Text >Inicio</Text>
-                    </Flex>
+                    <Link to='home' smooth duration={'500ms'}>
+                        <Flex className='hover' border={{base: 'none', sm:'1px solid black'}} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'} flexDir={{base: "column", sm: 'row'}}>
+                                <AiOutlineHome
+                                size={20}
+                                stroke='currentColor'
+                                fill='currentColor'/>
+                                <Text >Inicio</Text>
+                        </Flex>
+                    </Link>
                 </GridItem>
                 <GridItem gridArea={'1 / 2 / 2 / 3'}>
-                    <Flex className='hover' border={'1px solid black'} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'}>
-                        <AiOutlineUser
-                        size={20}
-                        stroke='currentColor'
-                        fill='currentColor'/>
-                        <Text >Sobre mí</Text>
-                    </Flex>
+                    <Link to='aboutme' smooth duration={'500ms'}>
+                        <Flex className='hover' border={{base: 'none', sm:'1px solid black'}} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'} flexDir={{base: "column", sm: 'row'}}>
+                            <AiOutlineUser
+                            size={20}
+                            stroke='currentColor'
+                            fill='currentColor'/>
+                            <Text>Sobre mí</Text>
+                        </Flex>
+                    </Link>
                 </GridItem>
                 <GridItem gridArea={'1 / 3 / 2 / 4'} fontSize={'20px'} justifySelf='end' padding={'0 30px'} alignItems={'center'}>
                     <Text onClick={hideMenu} className='hover'>X</Text>
                 </GridItem>
                 <GridItem gridArea={' 2 / 1 / 3 / 2'} ml='0.5'>
-                    <Flex className='hover' border={'1px solid black'} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'}>
-                        <BsBook
-                        size={20}
-                        stroke='currentColor'
-                        fill='currentColor'/>
-                        <Text>Habilidades</Text>
-                    </Flex>
+                    <Link to='skills' smooth duration={'500ms'}>
+                        <Flex className='hover' border={{base: 'none', sm:'1px solid black'}} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'} flexDir={{base: "column", sm: 'row'}}>
+                            <BsBook
+                            size={20}
+                            stroke='currentColor'
+                            fill='currentColor'/>
+                            <Text>Habilidades</Text>
+                        </Flex>
+                    </Link>
                 </GridItem>
                 <GridItem gridArea={'2 / 2 / 3 / 3'}  >
-                    <Flex className='hover' border={'1px solid black'} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'}>
-                        <BsBriefcase
-                        size={20}
-                        stroke='currentColor'
-                        fill='currentColor'/>
-                        <Text>Proyectos</Text>
-                    </Flex>
+                    <Link to='proyects' smooth duration={'500ms'}>
+                        <Flex className='hover' border={{base: 'none', sm:'1px solid black'}} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'} flexDir={{base: "column", sm: 'row'}}>
+                            <BsBriefcase
+                            size={20}
+                            stroke='currentColor'
+                            fill='currentColor'/>
+                            <Text>Proyectos</Text>
+                        </Flex>
+                    </Link>
                 </GridItem>
                 <GridItem gridArea={'2 / 3 / 3 / 4'} mr='0.5'>
-                    <Flex className='hover' border={'1px solid black'} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'}>
-                        <FaRegCommentDots
-                        size={20}
-                        stroke='currentColor'
-                        fill='currentColor'/>
-                        <Text>Contactame</Text>
-                    </Flex>
+                    <Link to='contact' smooth duration={'500ms'}>
+                        <Flex className='hover' border={{base: 'none', sm:'1px solid black'}} borderRadius='50px' gap='1' padding={'0 5px'} w='fit-content' alignItems={'center'} flexDir={{base: "column", sm: 'row'}}>
+                            <FaRegCommentDots
+                            size={20}
+                            stroke='currentColor'
+                            fill='currentColor'/>
+                            <Text>Contactame</Text>
+                            {/* <a href="#aboutme">Clickeame</a> */}
+                        </Flex>
+                    </Link>
                 </GridItem>
             </Grid>
             <Image ml="24px" src={logo} w='32px' h='32px'/>

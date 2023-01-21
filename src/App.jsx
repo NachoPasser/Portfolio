@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import {Grid} from '@chakra-ui/react'
-import Home from './components/Home/Home'
 import NavBar from './components/NavBar/NavBar'
+import Home from './components/Home/Home'
+import AboutMe from './components/AboutMe/AboutMe'
 import './App.css'
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <Grid className="App">
       <NavBar/>
       <Home/>
+      <AboutMe/>
     </Grid>
   )
 }
