@@ -1,4 +1,10 @@
 .hover:hover{
     color: #00fff7;
     cursor: pointer;
+    border-color: #00fff7;
+}
+
+.notPointerHover:hover{
+    color: #00fff7;
+    cursor: default;
 }
