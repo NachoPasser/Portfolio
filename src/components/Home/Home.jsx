@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Heading, Flex, Button, Text, Image, keyframes} from '@chakra-ui/react'
 import arrow from '/Home/arrow.png'
 import {FaLinkedin, FaGithub} from 'react-icons/fa'
+import { Link } from 'react-scroll'
 
 const upAndDown = keyframes`
 0%   { transform: translateY(0); }
@@ -26,7 +27,9 @@ function Home() {
                           fill='currentColor'
                           />
                         </a>
-                        <Button background={'#FCFBFE'} border='1px solid #00fff7' _hover={{background: '#00fff7', color:'#FCFBFE'}} color='#00fff7' w={'fit-content'}>Contactame</Button>
+                        <Link to='contact' smooth duration={'500ms'}>
+                          <Button background={'#FCFBFE'} border='1px solid #00fff7' _hover={{background: '#00fff7', color:'#FCFBFE'}} color='#00fff7' w={'fit-content'}>Contactame</Button>
+                        </Link>
                         <a href="https://github.com/NachoPasser" target="_blank">
                           <FaGithub
                           className='hover'
