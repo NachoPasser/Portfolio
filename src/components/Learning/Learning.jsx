@@ -10,7 +10,7 @@ function Learning() {
           <Text fontSize={'16px'} fontWeight={600}>MongoDB</Text>
         </Flex>
         <Text fontSize={'20px'}>Ando profundizando en temas más avanzados.</Text>
-        <Text fontSize={'20px'}>Ya he trabajado con ella anteriormente ☝️</Text>
+        <Text fontSize={'20px'}>Ya he trabajado con ella anteriormente 👇</Text>
     </Flex>
   )
 }

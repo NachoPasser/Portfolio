@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import AboutMe from './components/AboutMe/AboutMe'
 import Skills from './components/Skills/Skills'
 import Learning from './components/Learning/Learning'
+import Proyects from './components/Proyects/Proyects'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutMe/>
       <Skills />
       <Learning/>
+      <Proyects />
     </Grid>
   )
 }

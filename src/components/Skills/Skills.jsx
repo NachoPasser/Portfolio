@@ -43,8 +43,8 @@ function Skills() {
 
 
   return (
-    <Flex as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'}>
-        <Text fontSize={'24px'} id='skills'>Habilidades</Text>
+    <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'}>
+        <Text fontSize={'24px'}>Habilidades 🛠️</Text>
         {/* Tecnologias */}
         <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5}>
             <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">Tecnologías</Text>
