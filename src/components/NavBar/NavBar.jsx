@@ -94,13 +94,12 @@ function NavBar() {
                             stroke='currentColor'
                             fill='currentColor'/>
                             <Text>Contactame</Text>
-                            {/* <a href="#aboutme">Clickeame</a> */}
                         </Flex>
                     </Link>
                 </GridItem>
             </Grid>
             <Image ml="24px" src={logo} w='32px' h='32px'/>
-            <Flex align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='10px' >
+            <Flex display={{base: 'flex', md: 'none'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='10px' >
                 <Text className='hover' fontWeight={600}>ES/EN</Text>
                 <BiMoon
                     className='hover'
@@ -122,6 +121,23 @@ function NavBar() {
                     color={'#00fff7'}
                     className="lg:hidden cursor-pointer text-blue-600 dark:text-white"
                 /> */}
+            </Flex>
+            <Flex display={{base: 'none', md: 'flex'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='50px'>
+                <Link to='home' smooth duration={'500ms'}>
+                    <Text fontSize={'20px'} className='hover' >Inicio</Text>
+                </Link>
+                <Link to='aboutme' smooth duration={'500ms'}>
+                    <Text fontSize={'20px'} className='hover'>Sobre mí</Text>
+                </Link>
+                <Link to='skills' smooth duration={'500ms'}>
+                    <Text fontSize={'20px'} className='hover'>Habilidades</Text>
+                </Link>
+                <Link to='proyects' smooth duration={'500ms'}>
+                    <Text fontSize={'20px'} className='hover'>Proyectos</Text>
+                </Link>
+                <Link to='contact' smooth duration={'500ms'}>
+                    <Text fontSize={'20px'} className='hover'>Contacto</Text>
+                </Link>
             </Flex>
         </Flex>
     )
