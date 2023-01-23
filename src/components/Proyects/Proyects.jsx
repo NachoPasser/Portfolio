@@ -15,7 +15,7 @@ function Proyects() {
           <Image src='/Proyects/HenryAsk.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} />
           <Text fontSize={'18px'} fontWeight={600}>Henry Ask</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Flex align={'center'} justify='center'  className='hover' gap={1}>
+            <Flex align={'center'} justify='center'  className='hover' gap={1} onClick={() => window.open('https://github.com/PedroMtz8/HenryAsk', '_blank')}>
               <FaGithub
               size={30}
               stroke='currentColor'
@@ -23,7 +23,7 @@ function Proyects() {
               />
               <Text>Codigo</Text>
             </Flex>
-            <Flex align={'center'} justify='center' className='hover' gap={1}>
+            <Flex align={'center'} justify='center' className='hover' gap={1} onClick={() => window.open('https://www.youtube.com/watch?v=we7yBrXE4Kk', '_blank')}>
               <AiOutlineYoutube
               size={30}
               stroke='currentColor'
@@ -31,7 +31,7 @@ function Proyects() {
               />
               <Text>Exposicion</Text>
             </Flex>
-            <Flex align={'center'} justify='center' className='hover' gap={1}>
+            <Flex align={'center'} justify='center' className='hover' gap={1} onClick={() => window.open('https://henry-ask.vercel.app/', '_blank')}>
               <BiLinkExternal
               size={30}
               stroke='currentColor'
@@ -46,7 +46,7 @@ function Proyects() {
           <Image src='/Proyects/PI.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'0% 100%'} />
           <Text fontSize={'18px'} fontWeight={600}>Dogs App</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Flex align={'center'} justify='center'  className='hover' gap={1}>
+            <Flex align={'center'} justify='center'  className='hover' gap={1} onClick={() => window.open('https://github.com/NachoPasser/PI-Dogs', '_blank')}>
               <FaGithub
               size={30}
               stroke='currentColor'
@@ -54,7 +54,7 @@ function Proyects() {
               />
               <Text>Codigo</Text>
             </Flex>
-            <Flex align={'center'} justify='center' className='hover' gap={1}>
+            <Flex align={'center'} justify='center' className='hover' gap={1} onClick={() => window.open('https://pi-dogs-ignaciopasserini.vercel.app/', '_blank')}>
               <BiLinkExternal
               size={30}
               stroke='currentColor'
@@ -69,7 +69,7 @@ function Proyects() {
           <Image src='/Proyects/OnDrive.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'100% 0%'}/>
           <Text fontSize={'18px'} fontWeight={600}>On Drive</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Flex align={'center'} justify='center'  className='hover' gap={1}>
+            <Flex align={'center'} justify='center'  className='hover' gap={1} onClick={() => window.open('https://github.com/NachoPasser/OnDrive', '_blank')}>
               <FaGithub
               size={30}
               stroke='currentColor'
@@ -77,7 +77,7 @@ function Proyects() {
               />
               <Text>Codigo</Text>
             </Flex>
-            <Flex align={'center'} justify='center' className='hover' gap={1}>
+            <Flex align={'center'} justify='center' className='hover' gap={1} onClick={() => window.open('https://www.youtube.com/watch?v=8JYQKiN6lv4', '_blank')}>
               <AiOutlineYoutube
               size={30}
               stroke='currentColor'
