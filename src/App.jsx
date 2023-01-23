@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import AboutMe from './components/AboutMe/AboutMe'
 import Skills from './components/Skills/Skills'
+import Learning from './components/Learning/Learning'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <AboutMe/>
       <Skills />
+      <Learning/>
     </Grid>
   )
 }
