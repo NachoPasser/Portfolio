@@ -1,0 +1,9 @@
+.open{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+.close{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
