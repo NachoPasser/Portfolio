@@ -17,7 +17,7 @@ function AboutMe() {
             <a href="https://drive.google.com/file/d/1jNYv8kmJJUOIOfNWZDZ89yaw13-zgDGA/view" target={'_blank'}>
               <Button border={'1px solid #080808'} _hover={{backgroundColor: '#080808', color:'#FCFBFE'}}>{texts.aboutMeButton}</Button>
             </a>
-            <Text>{texts.aboutMeP3} <Link to='learning' smooth duration={'500ms'}><Text as='span' color={'#00fff7'} textDecoration='underline' _hover={{cursor: 'pointer'}}>{texts.aboutMeP4}</Text></Link></Text>
+            <Text>{texts.aboutMeP3} <Link to='learning' smooth duration={500}><Text as='span' color={'#00fff7'} textDecoration='underline' _hover={{cursor: 'pointer'}}>{texts.aboutMeP4}</Text></Link></Text>
           </Flex>
         </Flex>
     </Flex>

@@ -174,9 +174,9 @@ function Contact() {
             <Text textAlign={'left'}>{texts.contactName}</Text>
             <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
-            _focus='none'
-            _hover="none"
-            _focusVisible='none'
+            _focus={{outline: 'none'}}
+            _hover={{outline: 'none'}}
+            _focusVisible={{outline: 'none'}}
             textAlign={'left'}
             paddingStart='none'
             value={values.name}
@@ -187,9 +187,9 @@ function Contact() {
             <Text textAlign={'left'}>Email</Text>
             <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
-            _focus='none'
-            _hover="none"
-            _focusVisible='none'
+            __focus={{outline: 'none'}}
+            _hover={{outline: 'none'}}
+            _focusVisible={{outline: 'none'}}
             textAlign={'left'}
             paddingStart='none'
             value={values.email}
@@ -200,9 +200,9 @@ function Contact() {
             <Text textAlign={'left'}>{texts.contactSubject}</Text>
             <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
-            _focus='none'
-            _hover="none"
-            _focusVisible='none'
+            __focus={{outline: 'none'}}
+            _hover={{outline: 'none'}}
+            _focusVisible={{outline: 'none'}}
             textAlign={'left'}
             paddingStart='none'
             value={values.subject}
@@ -213,9 +213,9 @@ function Contact() {
             <Text textAlign={'left'}>{texts.contactMessage}</Text>
             <Textarea borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
-            _focus='none'
-            _hover="none"
-            _focusVisible='none'
+            __focus={{outline: 'none'}}
+            _hover={{outline: 'none'}}
+            _focusVisible={{outline: 'none'}}
             textAlign={'left'}
             paddingStart='none'
             maxH='150px'

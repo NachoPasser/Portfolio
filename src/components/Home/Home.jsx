@@ -29,7 +29,7 @@ function Home() {
                           fill='currentColor'
                           />
                         </a>
-                        <Link to='contact' smooth duration={'500ms'}>
+                        <Link to='contact' smooth duration={500}>
                           <Button background={'#FCFBFE'} border='1px solid #00fff7' _hover={{background: '#00fff7', color:'#FCFBFE'}} color='#00fff7' w={'fit-content'}>{texts.homeButton}</Button>
                         </Link>
                         <a href="https://github.com/NachoPasser" target="_blank">

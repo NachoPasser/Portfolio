@@ -17,7 +17,7 @@ function Proyects() {
           <Image src='/Proyects/HenryAsk.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} />
           <Text fontSize={'18px'} fontWeight={600}>Henry Ask</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Link href='https://github.com/PedroMtz8/HenryAsk' isExternal _hover={'none'}>
+            <Link href='https://github.com/PedroMtz8/HenryAsk' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center'  className='hover' gap={1}>
                 <FaGithub
                 size={30}
@@ -27,7 +27,7 @@ function Proyects() {
                 <Text >{texts.proyectsCode}</Text>
               </Flex>
             </Link>
-            <Link href='https://www.youtube.com/watch?v=we7yBrXE4Kk' isExternal _hover={'none'}>
+            <Link href='https://www.youtube.com/watch?v=we7yBrXE4Kk' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center' className='hover' gap={1}>
                 <AiOutlineYoutube
                 size={30}
@@ -37,7 +37,7 @@ function Proyects() {
                 <Text>{texts.proyectsVideo}</Text>
               </Flex>
             </Link>
-            <Link href='https://henry-ask.vercel.app/' isExternal _hover={'none'}>
+            <Link href='https://henry-ask.vercel.app/' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center' className='hover' gap={1}>
                 <BiLinkExternal
                 size={30}
@@ -54,7 +54,7 @@ function Proyects() {
           <Image src='/Proyects/PI.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'0% 100%'} />
           <Text fontSize={'18px'} fontWeight={600}>Dogs App</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Link href='https://github.com/NachoPasser/PI-Dogs' isExternal _hover={'none'}>
+            <Link href='https://github.com/NachoPasser/PI-Dogs' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center'  className='hover' gap={1}>
                 <FaGithub
                 size={30}
@@ -64,7 +64,7 @@ function Proyects() {
                 <Text>{texts.proyectsCode}</Text>
               </Flex>
             </Link>
-            <Link href='https://pi-dogs-ignaciopasserini.vercel.app/' isExternal _hover={'none'}>
+            <Link href='https://pi-dogs-ignaciopasserini.vercel.app/' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center' className='hover' gap={1}>
                 <BiLinkExternal
                 size={30}
@@ -81,7 +81,7 @@ function Proyects() {
           <Image src='/Proyects/OnDrive.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'100% 0%'}/>
           <Text fontSize={'18px'} fontWeight={600}>On Drive</Text>
           <Flex align={'center'} justify='center' gap={3}>
-            <Link href='https://github.com/NachoPasser/OnDrive' isExternal _hover={'none'}>
+            <Link href='https://github.com/NachoPasser/OnDrive' isExternal _hover={{textDecoration:'none'}}>
             <Flex align={'center'} justify='center'  className='hover' gap={1}>
               <FaGithub
               size={30}
@@ -91,7 +91,7 @@ function Proyects() {
               <Text>{texts.proyectsCode}</Text>
             </Flex>
             </Link>
-            <Link href='https://www.youtube.com/watch?v=8JYQKiN6lv4' isExternal _hover={'none'}>
+            <Link href='https://www.youtube.com/watch?v=8JYQKiN6lv4' isExternal _hover={{textDecoration:'none'}}>
             <Flex align={'center'} justify='center' className='hover' gap={1}>
               <AiOutlineYoutube
               size={30}

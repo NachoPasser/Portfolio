@@ -63,7 +63,7 @@ function Skills() {
             </Flex>
             <Grid display={hidden.backendSkills} gridTemplateColumns={{base:'repeat(auto-fill, minmax(290px, 1fr))', sm:'repeat(auto-fill, minmax(220px, 1fr))', md: 'repeat(auto-fill, minmax(290px, 1fr))'}} rowGap={5} w={'100%'} columnGap={0} >
               {skills.backendSkills.map((skill, i) => 
-                <Skill id={i} name={skill.name} src={skill.img}/>
+                <Skill key={i} name={skill.name} src={skill.img}/>
               )}
             </Grid>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('frontendSkills')}>
@@ -78,7 +78,7 @@ function Skills() {
             </Flex>
             <Grid display={hidden.frontendSkills} gridTemplateColumns={'repeat(auto-fill, minmax(290px, 1fr))'} rowGap={5} w={'100%'} columnGap={0} >
               {skills.frontendSkills.map((skill, i) => 
-                <Skill id={i} name={skill.name} src={skill.img}/>
+                <Skill key={i} name={skill.name} src={skill.img}/>
               )}
             </Grid>
         </Flex>
@@ -97,7 +97,7 @@ function Skills() {
             </Flex>
             <Grid display={hidden.devSkills} gridTemplateColumns={'repeat(auto-fill, minmax(290px, 1fr))'} rowGap={5} w={'100%'} columnGap={0} >
               {skills.devSkills.map((skill, i) => 
-                <Skill id={i} name={skill.name} src={skill.img}/>
+                <Skill key={i} name={skill.name} src={skill.img}/>
               )}
             </Grid>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('orgSkills')}>
@@ -112,7 +112,7 @@ function Skills() {
             </Flex>
             <Grid display={hidden.orgSkills} gridTemplateColumns={'repeat(auto-fill, minmax(290px, 1fr))'} rowGap={5} w={'100%'} columnGap={0} >
               {skills.orgSkills.map((skill, i) => 
-                <Skill id={i} name={skill.name} src={skill.img}/>
+                <Skill key={i} name={skill.name} src={skill.img}/>
               )}
             </Grid>
         </Flex>
