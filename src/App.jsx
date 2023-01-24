@@ -6,6 +6,7 @@ import Skills from './components/Skills/Skills'
 import Learning from './components/Learning/Learning'
 import Proyects from './components/Proyects/Proyects'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Learning/>
       <Proyects />
       <Contact/>
+      <Footer />
     </Grid>
   )
 }
