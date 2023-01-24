@@ -1,4 +1,4 @@
-import {useState, useRef, useEffect} from 'react'
+import {useState, useRef, useEffect, useContext} from 'react'
 import { Flex, Text, Image, keyframes, Button, Grid, GridItem} from '@chakra-ui/react'
 import {HiMenuAlt3} from 'react-icons/hi'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
@@ -8,8 +8,10 @@ import {FaRegCommentDots} from 'react-icons/fa'
 import './NavBar.css'
 import logo from '/icon.png'
 import { Link } from 'react-scroll'
+import { LanguageContext } from '../../context/LanguageContext'
 
 function NavBar() {
+    const { texts, handleLanguage, language } = useContext(LanguageContext)
     const [hidden, setHidden] = useState('none')
     const [closing, setClosing] = useState(false)
     const menu = useRef();
@@ -46,7 +48,7 @@ function NavBar() {
                                 size={20}
                                 stroke='currentColor'
                                 fill='currentColor'/>
-                                <Text >Inicio</Text>
+                                <Text>{texts.navbarHome}</Text>
                         </Flex>
                     </Link>
                 </GridItem>
@@ -57,7 +59,7 @@ function NavBar() {
                             size={20}
                             stroke='currentColor'
                             fill='currentColor'/>
-                            <Text>Sobre mí</Text>
+                            <Text>{texts.navbarAboutMe}</Text>
                         </Flex>
                     </Link>
                 </GridItem>
@@ -71,7 +73,7 @@ function NavBar() {
                             size={20}
                             stroke='currentColor'
                             fill='currentColor'/>
-                            <Text>Habilidades</Text>
+                            <Text>{texts.navbarSkills}</Text>
                         </Flex>
                     </Link>
                 </GridItem>
@@ -82,7 +84,7 @@ function NavBar() {
                             size={20}
                             stroke='currentColor'
                             fill='currentColor'/>
-                            <Text>Proyectos</Text>
+                            <Text>{texts.navbarProjects}</Text>
                         </Flex>
                     </Link>
                 </GridItem>
@@ -93,14 +95,18 @@ function NavBar() {
                             size={20}
                             stroke='currentColor'
                             fill='currentColor'/>
-                            <Text>Contactame</Text>
+                            <Text>{texts.navBarContact}</Text>
                         </Flex>
                     </Link>
                 </GridItem>
             </Grid>
             <Image ml="24px" src={logo} w='32px' h='32px'/>
             <Flex display={{base: 'flex', md: 'none'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='10px' >
-                <Text className='hover' fontWeight={600}>ES/EN</Text>
+                <Flex onClick={handleLanguage} _hover={{cursor: 'pointer'}}>
+                    <Text fontWeight={600} color={language === 'es' ? '#00fff7' : '#000000'}>ES</Text>
+                    <Text fontWeight={600}>/</Text>
+                    <Text fontWeight={600} color={language === 'en' ? '#00fff7' : '#000000'}>EN</Text>
+                </Flex>
                 <BiMoon
                     className='hover'
                     size={20}
@@ -115,29 +121,39 @@ function NavBar() {
                     onClick={() => setHidden('grid')}
                 />
                 {/* <BsSun
+                    className='hover'
                     size={20}
                     stroke='currentColor'
                     fill='currentColor'
-                    color={'#00fff7'}
-                    className="lg:hidden cursor-pointer text-blue-600 dark:text-white"
                 /> */}
             </Flex>
-            <Flex display={{base: 'none', md: 'flex'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='50px'>
+            <Flex display={{base: 'none', md: 'flex'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='30px'>
                 <Link to='home' smooth duration={'500ms'}>
-                    <Text fontSize={'20px'} className='hover' >Inicio</Text>
+                    <Text fontSize={'20px'} className='hover' >{texts.navbarHome}</Text>
                 </Link>
                 <Link to='aboutme' smooth duration={'500ms'}>
-                    <Text fontSize={'20px'} className='hover'>Sobre mí</Text>
+                    <Text fontSize={'20px'} className='hover'>{texts.navbarAboutMe}</Text>
                 </Link>
                 <Link to='skills' smooth duration={'500ms'}>
-                    <Text fontSize={'20px'} className='hover'>Habilidades</Text>
+                    <Text fontSize={'20px'} className='hover'>{texts.navbarSkills}</Text>
                 </Link>
                 <Link to='proyects' smooth duration={'500ms'}>
-                    <Text fontSize={'20px'} className='hover'>Proyectos</Text>
+                    <Text fontSize={'20px'} className='hover'>{texts.navbarProjects}</Text>
                 </Link>
                 <Link to='contact' smooth duration={'500ms'}>
-                    <Text fontSize={'20px'} className='hover'>Contacto</Text>
+                    <Text fontSize={'20px'} className='hover'>{texts.navBarContact}</Text>
                 </Link>
+                <BiMoon
+                    className='hover'
+                    size={20}
+                    stroke='currentColor'
+                    fill='currentColor'
+                />
+                <Flex onClick={handleLanguage} _hover={{cursor: 'pointer'}}>
+                    <Text fontWeight={600} color={language === 'es' ? '#00fff7' : '#000000'}>ES</Text>
+                    <Text fontWeight={600}>/</Text>
+                    <Text fontWeight={600} color={language === 'en' ? '#00fff7' : '#000000'}>EN</Text>
+                </Flex>
             </Flex>
         </Flex>
     )

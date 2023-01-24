@@ -1,9 +1,11 @@
 import { Flex, Text, Input, Box, Button, Textarea, Link, keyframes, useToast} from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
+import { LanguageContext } from '../../context/LanguageContext';
 
 function Contact() {
+  const { texts, language } = useContext(LanguageContext)
   const toast = useToast()
   const shake = keyframes`
     10%, 90% {
@@ -45,34 +47,34 @@ function Contact() {
       
       if(!values.name.length){
         disabled = true
-        error.name = '*Campo requerido'
+        error.name = texts.errorMissing
       }
       else if (values.name.length < 3) {
         disabled = true
-        error.name = '*Minimo 3 caracteres'
+        error.name = texts.errorName
       }
 
       if(!values.email.length){
         disabled = true
-        error.email = '*Campo requerido'
+        error.email = texts.errorMissing
       }
       else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(values.email)) {
         disabled = true
-        error.email = '*Email no valido'
+        error.email = texts.errorEmail
       }
       
       if (values.subject.length > 998) {
         disabled = true
-        error.subject = '*Maximo 998 caracteres'
+        error.subject = texts.errorSubject
       }
       
       if(!values.message.length){
         disabled = true
-        error.message = '*Campo requerido'
+        error.message = texts.errorMissing
       }
       else if(values.message.length < 10 ){
         disabled = true
-        error.message = '*Minimo 10 caracteres'
+        error.message = texts.errorMessage
       }
   
       setDisabled(disabled)
@@ -110,18 +112,18 @@ function Contact() {
     } else{
       setMounted(true)
     }
-  }, [values])
+  }, [values, language])
 
   return (
     <Flex id={'contact'} flexDir='column' align='center' justify={'center'} h='100vh' gap={5} pt={{base: '180px', sm: '120px', md: '0px'}}>
-      <Text fontSize={'24px'}>Contáctame ☎️</Text>
-      <Text w='95%'>Me encuentro buscando una oportunidad como desarrollador Backend. Tienes una propuesta?</Text>
+      <Text fontSize={'24px'}>{texts.homeButton} ☎️</Text>
+      <Text w='95%'>{texts.contactP1}</Text>
       <Flex flexDir={{base: 'column', md: 'row'}} gap={3} w={{base: '85%', md: '95%'}} maxW='750px'>
         <Flex flexDir={'column'} gap={3} w='100%' align='center'>
 
           <Flex flexDir={'row'} align='center' justify={'space-between'} gap='2rem' w={{base: '100%', sm: '330px'}}>
             <Flex flexDir={{base: 'column', sm: 'row'}} align='flex-start' justify={'left'} gap={{base: 1, sm: 2}}>
-              <Text color='#00fff7'>Nro. de telefono:</Text>
+              <Text color='#00fff7'>{texts.contactPhone}</Text>
               <Text>+549112168-8479</Text>
             </Flex>
             <Link href='https://wa.me/5491121688479' isExternal>
@@ -167,9 +169,9 @@ function Contact() {
           </Flex>
         </Flex>
         <Flex flexDir='column' gap={3} w='100%'>
-          <Text>O escribime por acá...</Text>
+          <Text>{texts.contactP2}</Text>
           <Flex flexDir={'column'}>
-            <Text textAlign={'left'}>Nombre</Text>
+            <Text textAlign={'left'}>{texts.contactName}</Text>
             <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
             _focus='none'
@@ -195,7 +197,7 @@ function Contact() {
             <Text color='red' textAlign={'left'}>{error.email}</Text>
           </Flex>
           <Flex flexDir={'column'}>
-            <Text textAlign={'left'}>Asunto</Text>
+            <Text textAlign={'left'}>{texts.contactSubject}</Text>
             <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
             _focus='none'
@@ -208,7 +210,7 @@ function Contact() {
             <Text color='red' textAlign={'left'}>{error.subject}</Text>
           </Flex>
           <Flex flexDir={'column'}>
-            <Text textAlign={'left'}>Mensaje</Text>
+            <Text textAlign={'left'}>{texts.contactMessage}</Text>
             <Textarea borderBottom={'1px solid #00fff7'} borderRadius='0px' 
             outline={'none'} 
             _focus='none'
@@ -221,7 +223,7 @@ function Contact() {
             onChange={(e) => setValues({...values, message: e.target.value})}/>
             <Text color='red' textAlign={'left'}>{error.message}</Text>
           </Flex>
-          <Button border={'1px solid #00fff7'} fontSize={'18px'} _hover={{background: '#00fff7', color: 'white'}} onClick={handleSubmit} w={'150px'} animation={animation ? `${shake} 1s forwards` : ''} onAnimationEnd={() => setAnimation(false)}>Enviar</Button>
+          <Button border={'1px solid #00fff7'} fontSize={'18px'} _hover={{background: '#00fff7', color: 'white'}} onClick={handleSubmit} w={'150px'} animation={animation ? `${shake} 1s forwards` : ''} onAnimationEnd={() => setAnimation(false)}>{texts.contactSend}</Button>
         </Flex>
       </Flex>
     </Flex>

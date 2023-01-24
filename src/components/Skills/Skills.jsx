@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Flex, Text, Grid } from '@chakra-ui/react'
 import { HiCode } from 'react-icons/hi'
 import {IoIosArrowDown} from 'react-icons/io'
@@ -6,6 +6,7 @@ import {IoServerOutline} from 'react-icons/io5'
 import {BsJournalBookmarkFill} from 'react-icons/bs'
 import {FaLaptopCode} from 'react-icons/fa'
 import Skill from './Skill/Skill'
+import { LanguageContext } from '../../context/LanguageContext'
 import './Skills.css'
 const create = (name) => {
   return {
@@ -15,6 +16,7 @@ const create = (name) => {
 }
 
 function Skills() {
+  const { texts } = useContext(LanguageContext)
   const [hidden,setHidden] = useState({
     backendSkills: 'none',
     frontendSkills: 'none',
@@ -44,13 +46,13 @@ function Skills() {
 
   return (
     <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'}>
-        <Text fontSize={'24px'}>Habilidades 🛠️</Text>
+        <Text fontSize={'24px'}>{texts.navbarSkills} 🛠️</Text>
         {/* Tecnologias */}
         <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5}>
-            <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">Tecnologías</Text>
+            <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">{texts.skillsTechnologies}</Text>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('backendSkills')}>
                 <IoServerOutline size={30} stroke='#00fff7' fill='#00fff7'/>
-                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>Desarrollo Backend</Text>
+                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>{texts.skillsBackend}</Text>
                 <IoIosArrowDown 
                 size={25} 
                 stroke='#00fff7' 
@@ -66,7 +68,7 @@ function Skills() {
             </Grid>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('frontendSkills')}>
                 <HiCode size={30} stroke='#00fff7' fill='#00fff7'/>
-                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>Desarrollo Frontend</Text>
+                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>{texts.skillsFrontend}</Text>
                 <IoIosArrowDown
                 size={25}
                 stroke='#00fff7'
@@ -82,10 +84,10 @@ function Skills() {
         </Flex>
         {/* Herramientas de desarrollo */}
         <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5}>
-            <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">Herramientas de desarrollo</Text>
+            <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">{texts.skillsTools}</Text>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('devSkills')}>
                 <FaLaptopCode size={30} stroke='#00fff7' fill='#00fff7'/>
-                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>Tecnologías</Text>
+                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>{texts.skillsTechnologies}</Text>
                 <IoIosArrowDown
                 size={25}
                 stroke='#00fff7'
@@ -100,7 +102,7 @@ function Skills() {
             </Grid>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('orgSkills')}>
                 <BsJournalBookmarkFill size={30} stroke='#00fff7' fill='#00fff7'/>
-                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>Organizacion</Text>
+                <Text fontSize={'20px'} fontWeight={600} w='100%' textAlign={'left'}>{texts.skillsOrg}</Text>
                 <IoIosArrowDown
                 size={25}
                 stroke='#00fff7'
