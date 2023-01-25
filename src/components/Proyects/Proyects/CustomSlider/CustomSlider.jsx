@@ -20,7 +20,6 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
 
     const next = () => {
       if(!animating){
-        console.log(count)
         count = (count + 1) % sliderData.length
         setIndex(count)
         setAnimating(true)
@@ -51,9 +50,7 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
     }
 
     useEffect(() => {
-      console.log(isOpen)
       if(isOpen){
-        console.log('ola')
         var timer = setInterval(function(){
           next()
         }, 5000)

@@ -1,4 +1,4 @@
-import {Grid} from '@chakra-ui/react'
+import {Grid, useMediaQuery} from '@chakra-ui/react'
 import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import AboutMe from './components/AboutMe/AboutMe'
@@ -11,8 +11,9 @@ import LanguageProvider from './context/LanguageContext'
 import './App.css'
 
 function App() {
+  const [px875] = useMediaQuery('(max-height: 800px)')
   return (
-    <Grid className="App">
+    <Grid className="App" rowGap={px875 ? 200 : 100}>
       <LanguageProvider>
         <NavBar/>
         <Home/>

@@ -14,7 +14,7 @@ const upAndDown = keyframes`
 function Home() {
   const { texts } = useContext(LanguageContext)
   return (
-    <Flex as='section' id='home' h='100vh' flexDirection={'column'} justify='center'>
+    <Flex as='section' id='home' minH='100vh' flexDirection={'column'} justify='center' mt={'72px'}>
         <Flex flexDir={'column'} align='center' gap={5}>
             <Flex flexDir={'column'} gap={2} w='fit-content' align={'center'}>
                 <Heading as={'h1'} size='4xl' fontWeight={600} lineHeight='1.1' color={'#00fff7'} textAlign={{base: 'center', md: 'left', lg: 'left', xl: 'left', '2xl': 'left'}}>Ignacio Passerini</Heading>

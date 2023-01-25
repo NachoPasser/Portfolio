@@ -107,12 +107,6 @@ function NavBar() {
                     <Text fontWeight={600}>/</Text>
                     <Text fontWeight={600} color={language === 'en' ? '#00fff7' : '#000000'}>EN</Text>
                 </Flex>
-                <BiMoon
-                    className='hover'
-                    size={20}
-                    stroke='currentColor'
-                    fill='currentColor'
-                />
                 <HiMenuAlt3
                     className={hidden === 'none' ? 'hover' : 'notPointerHover'}
                     size={24}
@@ -120,12 +114,6 @@ function NavBar() {
                     fill='currentColor'
                     onClick={() => setHidden('grid')}
                 />
-                {/* <BsSun
-                    className='hover'
-                    size={20}
-                    stroke='currentColor'
-                    fill='currentColor'
-                /> */}
             </Flex>
             <Flex display={{base: 'none', md: 'flex'}} align='center' justify={'end'} w='100vw' padding={'0 24px'} columnGap='30px'>
                 <Link to='home' smooth duration={500}>
@@ -143,12 +131,6 @@ function NavBar() {
                 <Link to='contact' smooth duration={500}>
                     <Text fontSize={'20px'} className='hover'>{texts.navBarContact}</Text>
                 </Link>
-                <BiMoon
-                    className='hover'
-                    size={20}
-                    stroke='currentColor'
-                    fill='currentColor'
-                />
                 <Flex onClick={handleLanguage} _hover={{cursor: 'pointer'}}>
                     <Text fontWeight={600} color={language === 'es' ? '#00fff7' : '#000000'}>ES</Text>
                     <Text fontWeight={600}>/</Text>
