@@ -58,7 +58,7 @@ function DogsApp() {
         isOpen={isOpen}
         onClose={onClose}
         isCentered
-      >
+        scrollBehavior='inside'>
         <ModalOverlay />
         <ModalContent w={'100%'} h='fit-content' maxW={'1200px'} marginInline={{base: 2, sm: 5}} >
           <ModalHeader position={'relative'} top={2}>Dogs App</ModalHeader>
