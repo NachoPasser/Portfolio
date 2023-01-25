@@ -33,7 +33,7 @@ function DogsApp() {
               </Flex>
             </Link>
           </Flex>
-          <Button textColor={'#00fff7'} border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}}>Ver más detalle</Button>
+          <Button textColor={'#00fff7'} background='#FCFBFE' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}}>Ver más detalle</Button>
     </Flex>
   )
 }

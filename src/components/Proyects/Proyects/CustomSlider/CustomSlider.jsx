@@ -73,7 +73,7 @@ function CustomSlider({sliderData, isOpen}) {
         </Flex>
         <Flex position={'absolute'} bottom={3} gap={2}>
           {sliderData.map((_, id) => 
-          <Button key={id} border={index === id ? '1px solid #00fff7' : '1px solid black'} w='10px' h='8px' background={index === id ? 'white' : 'lightgrey'} _hover={{background: 'white', cursor: animating ? 'default' : 'pointer'}} onClick={() => changeSlide(id)}/>)}
+          <Button key={id} border={index === id ? '1px solid #00fff7' : '1px solid black'} w='10px' h='8px' background={index === id ? '#FCFBFE' : 'lightgrey'} _hover={{background: 'white', cursor: animating ? 'default' : 'pointer'}} onClick={() => changeSlide(id)}/>)}
         </Flex>
       </Flex>
     </Flex>

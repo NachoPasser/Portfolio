@@ -1,15 +1,11 @@
 import React, { useContext } from 'react'
-import { Flex, Text, Image, Grid, Link, Button, useMediaQuery, Modal, useDisclosure} from '@chakra-ui/react'
-import { FaGithub} from 'react-icons/fa'
-import { AiOutlineYoutube } from 'react-icons/ai'
-import { BiLinkExternal } from 'react-icons/bi'
+import { Flex, Text, Grid, useMediaQuery} from '@chakra-ui/react'
 import { LanguageContext } from '../../context/LanguageContext'
 import HenryAsk from './Proyects/HenryAsk'
 import DogsApp from './Proyects/DogsApp'
 import OnDrive from './Proyects/OnDrive'
 
 function Proyects() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const {texts} = useContext(LanguageContext)
   const smallerThan1468 = useMediaQuery('(max-width: 1468px)')
   return (

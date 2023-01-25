@@ -1,5 +1,5 @@
 import {useState, useRef, useEffect, useContext} from 'react'
-import { Flex, Text, Image, keyframes, Button, Grid, GridItem} from '@chakra-ui/react'
+import { Flex, Text, Image, keyframes, Grid, GridItem} from '@chakra-ui/react'
 import {HiMenuAlt3} from 'react-icons/hi'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 import {BsSun, BsBook, BsBriefcase} from 'react-icons/bs'

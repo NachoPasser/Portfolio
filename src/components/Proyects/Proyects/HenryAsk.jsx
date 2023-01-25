@@ -28,7 +28,7 @@ function HenryAsk() {
     return (
         <>
         <Flex flexDir={'column'} gap={5} justify='center' align={'center'} w='fit-content'>
-            <Image src='/Proyects/HenryAsk.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} />
+            <Image src='/Proyects/HenryAsk/Home.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} />
             <Text fontSize={'18px'} fontWeight={600}>Henry Ask</Text>
             <Flex align={'center'} justify='center' gap={3}>
                 <Link href='https://github.com/PedroMtz8/HenryAsk' isExternal _hover={{textDecoration:'none'}}>
@@ -62,7 +62,7 @@ function HenryAsk() {
                 </Flex>
                 </Link>
             </Flex>
-            <Button textColor={'#00fff7'} border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen}>Ver más detalle</Button>
+            <Button textColor={'#00fff7'} background='#FCFBFE' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen}>Ver más detalle</Button>
         </Flex>
         <Modal
         isOpen={isOpen}

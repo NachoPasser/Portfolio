@@ -223,7 +223,7 @@ function Contact() {
             onChange={(e) => setValues({...values, message: e.target.value})}/>
             <Text color='red' textAlign={'left'}>{error.message}</Text>
           </Flex>
-          <Button border={'1px solid #00fff7'} fontSize={'18px'} _hover={{background: '#00fff7', color: 'white'}} onClick={handleSubmit} w={'150px'} animation={animation ? `${shake} 1s forwards` : ''} onAnimationEnd={() => setAnimation(false)}>{texts.contactSend}</Button>
+          <Button border={'1px solid #00fff7'} fontSize={'18px'} background='#FCFBFE' _hover={{background: '#00fff7', color: 'white'}} onClick={handleSubmit} w={'150px'} animation={animation ? `${shake} 1s forwards` : ''} onAnimationEnd={() => setAnimation(false)}>{texts.contactSend}</Button>
         </Flex>
       </Flex>
     </Flex>
