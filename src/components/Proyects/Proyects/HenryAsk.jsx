@@ -2,6 +2,7 @@ import {
     Flex, 
     Text, 
     Image, 
+    Box,
     Grid, 
     Link, 
     Button, 
@@ -20,11 +21,13 @@ import { LanguageContext } from '../../../context/LanguageContext'
 import { FaGithub} from 'react-icons/fa'
 import { AiOutlineYoutube } from 'react-icons/ai'
 import { BiLinkExternal } from 'react-icons/bi'
-import Slider from './CustomSlider/CustomSlider'
+import CustomSlider from './CustomSlider/CustomSlider'
+import ProyectSkill from './ProyectSkill/ProyectSkill'
 
 function HenryAsk() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const {texts} = useContext(LanguageContext)
+    const [largerThan756px] = useMediaQuery('(min-width: 756px)')
     return (
         <>
         <Flex flexDir={'column'} gap={5} justify='center' align={'center'} w='fit-content'>
@@ -70,11 +73,56 @@ function HenryAsk() {
         isCentered
       >
         <ModalOverlay />
-        <ModalContent w={{base: '98%', sm: '95%'}} h='95%' maxW={'none'} >
-          <ModalHeader/>
+        <ModalContent w={{base: '98%', sm: '95%'}} h='fit-content' maxW={'1200px'} >
+          <ModalHeader position={'relative'} top={2}>Henry Ask</ModalHeader>
           <ModalCloseButton _hover={{ color: "#00fff7" }} />
           <ModalBody paddingInline='0' pt='20px'>
-          <Slider sliderData={["/Proyects/HenryAsk/LandingPage.png", "/Proyects/HenryAsk/Login.png", "/Proyects/HenryAsk/Home.png"]} isOpen={isOpen}/>
+          <CustomSlider sliderData={["/Proyects/HenryAsk/LandingPage.png", "/Proyects/HenryAsk/Login.png", "/Proyects/HenryAsk/Home.png"]} flexSize={[1.9917, 1.9741, 1.9618]} isOpen={isOpen}/>
+          <Flex marginInline={'20px'} align='flex-start' justify={'center'} flexDir='column'>
+            <Flex mt={2} gap={2} mb={2} align='center' justify={'flex-start'} flexWrap='wrap' >
+              <ProyectSkill skill={'React'}/>
+              <ProyectSkill skill={'Redux-toolkit'}/>
+              <ProyectSkill skill={'ChakraUI'}/>
+              <ProyectSkill skill={'Node.js'}/>
+              <ProyectSkill skill={'Express'}/>
+              <ProyectSkill skill={'Mongoose'}/>
+              <ProyectSkill skill={'MongoDB'}/>
+              <ProyectSkill skill={'Firebase'}/>
+            </Flex>
+            <Text textAlign={'left'}>Es una plataforma inspirada en StackOverflow donde podrás realizar preguntas, responder las preguntas de otros usuarios y aclarar cualquier duda por medio de comentarios. <Text as={largerThan756px ? 'span' : 'p'} textAlign={'left'}>Fue desarrollada para alumnos y egresados de dicha empresa, pero de momento cualquier persona puede ingresar a la misma.</Text></Text>
+            <Flex align={'center'} justify='center' gap={{base: 5, md: 10}} w='100%' mt={5} fontSize={{base: '16px', md:'20px'}}>
+                <Link href='https://github.com/PedroMtz8/HenryAsk' isExternal _hover={{textDecoration:'none'}}>
+                <Flex align={'center'} justify='center'  className='hover' gap={1}>
+                    <FaGithub
+                    size={30}
+                    stroke='currentColor'
+                    fill='currentColor'
+                    />
+                    <Text >{texts.proyectsCode}</Text>
+                </Flex>
+                </Link>
+                <Link href='https://www.youtube.com/watch?v=we7yBrXE4Kk' isExternal _hover={{textDecoration:'none'}}>
+                <Flex align={'center'} justify='center' className='hover' gap={1}>
+                    <AiOutlineYoutube
+                    size={30}
+                    stroke='currentColor'
+                    fill='currentColor'
+                    />
+                    <Text>{texts.proyectsVideo}</Text>
+                </Flex>
+                </Link>
+                <Link href='https://henry-ask.vercel.app/' isExternal _hover={{textDecoration:'none'}}>
+                <Flex align={'center'} justify='center' className='hover' gap={1}>
+                    <BiLinkExternal
+                    size={30}
+                    stroke='currentColor'
+                    fill='currentColor'
+                    />
+                    <Text>{texts.proyectsDemo}</Text>
+                </Flex>
+                </Link>
+            </Flex>
+          </Flex>
           </ModalBody>
           <ModalFooter>
           </ModalFooter>
