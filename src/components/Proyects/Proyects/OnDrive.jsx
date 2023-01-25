@@ -64,7 +64,7 @@ function OnDrive() {
         isCentered
       >
         <ModalOverlay />
-        <ModalContent w={{base: '98%', sm: '95%'}} h='fit-content' maxW={'1200px'} >
+        <ModalContent w={'100%'} h='fit-content' maxW={'1200px'} marginInline={{base: 2, sm: 5}} >
           <ModalHeader position={'relative'} top={2}>On Drive</ModalHeader>
           <ModalCloseButton _hover={{ color: "#00fff7" }} />
           <ModalBody paddingInline='0' pt='20px'>
