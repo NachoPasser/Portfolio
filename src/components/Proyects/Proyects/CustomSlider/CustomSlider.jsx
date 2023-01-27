@@ -10,7 +10,6 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
 
     const next = () => {
       if(!transitioning){
-        console.log(count)
         count = (count + 1) % sliderData.length
         setIndex(count)
         setTransitioning(true)
