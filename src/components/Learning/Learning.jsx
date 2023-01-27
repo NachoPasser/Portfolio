@@ -15,7 +15,7 @@ function Learning() {
         <Text fontSize={'24px'}>{texts.Learning} 📚</Text>
         <Flex flexDir={{base: 'column', md: 'row'}} mt='10' w='85%' justify={'center'} align={{base: 'center', md:'initial'}} h='450px'>
           <Flex minW={{base: '220px', sm: '320px', md: '380px', lg: '400px'}} maxW={{base: '220px', sm: '320px', md: '380px', lg: '400px'}} minH={{base: '220px', md: 'auto'}} position={'relative'} align='center' justify={'center'}>
-              <Image pos='absolute' src={'student.jpg'} w={{base: '200px', sm: '220px', md: '300px'}} left={{base: '0', sm: '20px', md: 0}}/>
+              <Image pos='absolute' src={'student.png'} w={{base: '200px', sm: '220px', md: '300px'}} left={{base: '0', sm: '20px', md: 0}}/>
             <Flex width={'300px'} h='150px' position={'absolute'} top={{base:'-80px', sm: '-90px', md: 0}} right={{base:'-95px', sm: '-50px', md: -10}} align='center' justify={'center'} transform={{base: 'scale(65%)', sm: 'scale(80%)', md: 'none'}} backgroundImage={'bubble2.png'} backgroundRepeat={'no-repeat'} backgroundPosition='center' backgroundSize={'250px'}>
               <Container width={'100px'} position='relative' left={'15px'}>
                 <Swiper

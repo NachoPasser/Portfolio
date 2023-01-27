@@ -172,7 +172,7 @@ function Contact() {
           <Text>{texts.contactP2}</Text>
           <Flex flexDir={'column'}>
             <Text textAlign={'left'}>{texts.contactName}</Text>
-            <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
+            <Input borderBottom={'1px solid #00fff7'} borderTop={'none'} borderRight={'none'} borderLeft={'none'} borderRadius='0px' 
             outline={'none'} 
             _focus={{outline: 'none'}}
             _hover={{outline: 'none'}}
