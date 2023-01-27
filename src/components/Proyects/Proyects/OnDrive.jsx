@@ -83,9 +83,9 @@ function OnDrive() {
               <ProyectSkill skill={'JWT'}/>
               <ProyectSkill skill={'Bcrypt'}/>
             </Flex>
-            <Text textAlign={'left'} mb={2}>Proyecto grupal con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.</Text>
-            <Text textAlign={'left'} mb={2}>Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible. </Text>
-            <Text textAlign={'left'}>Un conductor puede publicar utilizando la herramienta anteriormente nombrada. Especifica fecha y lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.</Text>
+            <Text textAlign={'left'} mb={2}>{texts.modalOnDriveP1}</Text>
+            <Text textAlign={'left'} mb={2}>{texts.modalOnDriveP2}</Text>
+            <Text textAlign={'left'}>{texts.modalOnDriveP3}</Text>
             <Flex align={'center'} justify='center' gap={{base: 5, md: 10}} w='100%' mt={5} fontSize={{base: '16px', md:'20px'}}>
               <Link href='https://github.com/NachoPasser/OnDrive' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center'  className='hover' gap={1}>

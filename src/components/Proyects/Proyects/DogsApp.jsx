@@ -75,7 +75,7 @@ function DogsApp() {
               <ProyectSkill skill={'Sequelize'}/>
               <ProyectSkill skill={'PostgreSQL'}/>
             </Flex>
-            <Text textAlign={'left'}>Es una SPA interactiva donde el usuario puede consultar diferentes razas de perro provenientes de https://thedogapi.com/. Estás razas pueden ser filtradas, ordenadas y buscadas por nombre. Además el usuario puede crear su propia raza.</Text>
+            <Text textAlign={'left'}>{texts.modalDogsApp}</Text>
             <Flex align={'center'} justify='center' gap={{base: 5, md: 10}} w='100%' mt={5} fontSize={{base: '16px', md:'20px'}}>
               <Link href='https://github.com/NachoPasser/PI-Dogs' isExternal _hover={{textDecoration:'none'}}>
               <Flex align={'center'} justify='center'  className='hover' gap={1}>

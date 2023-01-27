@@ -90,7 +90,7 @@ function HenryAsk() {
               <ProyectSkill skill={'MongoDB'}/>
               <ProyectSkill skill={'Firebase'}/>
             </Flex>
-            <Text textAlign={'left'}>Es una plataforma inspirada en StackOverflow donde podrás realizar preguntas, responder las preguntas de otros usuarios y aclarar cualquier duda por medio de comentarios. <Text as={largerThan756px ? 'span' : 'p'} textAlign={'left'}>Fue desarrollada para alumnos y egresados de dicha empresa, pero de momento cualquier persona puede ingresar a la misma.</Text></Text>
+            <Text textAlign={'left'}>{texts.modalHenryAskP1}<Text as={largerThan756px ? 'span' : 'p'} textAlign={'left'}>{texts.modalHenryAskP2}</Text></Text>
             <Flex align={'center'} justify='center' gap={{base: 5, md: 10}} w='100%' mt={5} fontSize={{base: '16px', md:'20px'}}>
                 <Link href='https://github.com/PedroMtz8/HenryAsk' isExternal _hover={{textDecoration:'none'}}>
                 <Flex align={'center'} justify='center'  className='hover' gap={1}>
