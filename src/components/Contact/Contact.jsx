@@ -115,7 +115,7 @@ function Contact() {
   }, [values, language])
 
   return (
-    <Flex id={'contact'} flexDir='column' align='center' justify={'center'} minH='100vh' gap={5}>
+    <Flex id={'contact'} flexDir='column' align='center' justify={'center'} minH='100vh' gap={5} pt='150px'>
       <Text fontSize={'24px'}>{texts.homeButton} ☎️</Text>
       <Text w='95%'>{texts.contactP1}</Text>
       <Flex flexDir={{base: 'column', md: 'row'}} gap={3} w={{base: '85%', md: '95%'}} maxW='750px'>

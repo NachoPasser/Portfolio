@@ -45,7 +45,7 @@ function Skills() {
 
 
   return (
-    <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'}>
+    <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'} pt='80px'>
         <Text fontSize={'24px'}>{texts.navbarSkills} 🛠️</Text>
         {/* Tecnologias */}
         <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5}>
