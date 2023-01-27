@@ -7,6 +7,7 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
     const [index, setIndex] = useState(0)
     const [animating, setAnimating] = useState(false)
     const [mounted, setMount] = useState(false)
+    const [images, setImages] = useState(null)
 
 
     const fadeIn = keyframes`
@@ -69,7 +70,8 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
           <MdOutlineKeyboardArrowLeft stroke='#FFFFFF' fill='#000000' size={'30px'}/>
         </Flex>
         <Flex flex={flexSize[index]} >
-          <Image src={sliderData[index]} w={'100%'} verticalAlign='middle' animation={animating && mounted ? `${fadeIn} 1s` : ''} onAnimationEnd={onAnimationEnd} minW={'300px'} minH={'150px'}  />
+          {sliderData?.map((img, i) => 
+          <Image src={img} w={'100%'} verticalAlign='middle' position={i !== index ? 'absolute' : 'relative'} opacity={i !== index ? 0 : 1} transition='all 1s' onTransitionEnd={onAnimationEnd}  minW={'300px'} minH={'150px'} />)}
         </Flex>
         <Flex justify={'center'} align='center' position={'absolute'}  right='10px' background={'white'} borderRadius={'50px'} border='1px solid #00fff7' onClick={next} zIndex='100' _hover={{cursor: animating ? 'default' : 'pointer'}}>
           <MdOutlineKeyboardArrowRight stroke='#FFFFFF' fill='#000000' size={'30px'}/>

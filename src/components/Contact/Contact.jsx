@@ -185,7 +185,7 @@ function Contact() {
           </Flex>
           <Flex flexDir={'column'}>
             <Text textAlign={'left'}>Email</Text>
-            <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
+            <Input borderBottom={'1px solid #00fff7'} borderTop={'none'} borderRight={'none'} borderLeft={'none'} borderRadius='0px' 
             outline={'none'} 
             __focus={{outline: 'none'}}
             _hover={{outline: 'none'}}
@@ -198,7 +198,7 @@ function Contact() {
           </Flex>
           <Flex flexDir={'column'}>
             <Text textAlign={'left'}>{texts.contactSubject}</Text>
-            <Input borderBottom={'1px solid #00fff7'} borderRadius='0px' 
+            <Input borderBottom={'1px solid #00fff7'} borderTop={'none'} borderRight={'none'} borderLeft={'none'} borderRadius='0px' 
             outline={'none'} 
             __focus={{outline: 'none'}}
             _hover={{outline: 'none'}}
