@@ -63,6 +63,14 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
       
     }, [isOpen])
 
+    useEffect(() => {
+      sliderData.forEach((image) => {
+        const newImage = document.createElement('img')
+        newImage.src = image;
+        window[image] = newImage;
+    });
+    }, [])
+
   return (
     <Flex align={'center'} justifyContent='center' w='100%'position={'relative'} userSelect='none'>
       <Flex position={'relative'} justify={'center'} align='center'>
@@ -71,7 +79,7 @@ function CustomSlider({sliderData, flexSize, isOpen}) {
         </Flex>
         <Flex flex={flexSize[index]} >
           {sliderData?.map((img, i) => 
-          <Image src={img} w={'100%'} verticalAlign='middle' position={i !== index ? 'absolute' : 'relative'} opacity={i !== index ? 0 : 1} transition='all 1s' onTransitionEnd={onAnimationEnd}  minW={'300px'} minH={'150px'} />)}
+          <Image key={i} src={img} w={'100%'} verticalAlign='middle' position={i !== index ? 'absolute' : 'relative'} opacity={i !== index ? 0 : 1} transition='all 1s' onTransitionEnd={onAnimationEnd}  minW={'300px'} minH={'150px'} />)}
         </Flex>
         <Flex justify={'center'} align='center' position={'absolute'}  right='10px' background={'white'} borderRadius={'50px'} border='1px solid #00fff7' onClick={next} zIndex='100' _hover={{cursor: animating ? 'default' : 'pointer'}}>
           <MdOutlineKeyboardArrowRight stroke='#FFFFFF' fill='#000000' size={'30px'}/>
