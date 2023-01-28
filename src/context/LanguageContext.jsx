@@ -12,7 +12,7 @@ const translations = {
         homeRol: 'Full Stack Developer',
         homeButton: `Contact me`,
         homeSlice: `Scroll down to know more about me`,
-        aboutMeP1: `I'm Ignacio, i'm 20 years old and i live on Argentina, Buenos Aires. I started my programming journey during my computer engineering degree and am now a Full Stack Developer graduate from SoyHenry.`,
+        aboutMeP1: `I'm Ignacio, i'm 20 years old and i live on Buenos Aires, Argentina. I started my programming journey during my computer engineering degree and am now a Full Stack Developer graduate from SoyHenry.`,
         aboutMeP2: `I am passionate about Backend, an area where I enjoy data manipulation, prioritizing that it be secure, fast and scalable.`,
         aboutMeButton: `Download CV`,
         aboutMeP3: `I'm always learning a new technology or concept. I'm currently digging`,
@@ -52,6 +52,7 @@ const translations = {
         modalOnDriveP1: `It's a project with the objective of creating a web application to improve the way of traveling in Argentina, sharing vehicles and reducing CO2 emissions. Within the page, a user can be a passenger and then register as a driver.`,
         modalOnDriveP2: `A passenger can join long-distance trips published by different drivers, and, through a tool, calculate the costs of a trip they want to take in case there is no driver available along with the best possible route.`,
         modalOnDriveP3: `A driver can post trips using the above named tool. Specify date, place of departure and arrival, number of seats available and obtain the cost of the trip using the tool.`,
+        CV: `https://drive.google.com/file/d/1aIH_wWC2GqERLrEsBPKCLegetdnHwosu/view`
     },
     es: {
         navbarHome: `Inicio`,
@@ -62,7 +63,7 @@ const translations = {
         homeRol: 'Desarrollador Full Stack',
         homeButton: `Contáctame`,
         homeSlice: `Desliza para conocer más sobre mí`,
-        aboutMeP1: `Soy Ignacio, tengo 20 años y vivo en Argentina, Buenos Aires. Comencé mi recorrido por la programación durante mi carrera en ingeniería en computación y ahora soy un Desarrollador Full Stack graduado de SoyHenry.`,
+        aboutMeP1: `Soy Ignacio, tengo 20 años y vivo en Buenos Aires, Argentina. Comencé mi recorrido por la programación durante mi carrera en ingeniería en computación y ahora soy un Desarrollador Full Stack graduado de SoyHenry.`,
         aboutMeP2: `Me apasiona el Backend, área donde disfruto de la manipulación de datos, priorizando que sea segura, rápida y escalable.`,
         aboutMeButton: `Descargar CV`,
         aboutMeP3: `Siempre estoy aprendiendo alguna tecnología o concepto. Actualmente estoy profundizando`,
@@ -101,7 +102,8 @@ const translations = {
         modalDogsApp: `Es una SPA interactiva donde el usuario puede consultar diferentes razas de perro provenientes de https://thedogapi.com/. Estás razas pueden ser filtradas, ordenadas y buscadas por nombre. Además el usuario puede crear su propia raza.`,
         modalOnDriveP1: `Proyecto con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.`,
         modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
-        modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`
+        modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`,
+        CV: `https://drive.google.com/file/d/1zdPLQzPabeOY6zMgRDCVSjk4angV1qVp/view`
     },
 };
 

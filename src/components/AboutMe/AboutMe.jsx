@@ -14,7 +14,7 @@ function AboutMe() {
           <Flex flexDir='column' justify={'center'} align='center' gap={5}>
             <Text>{texts.aboutMeP1}</Text>
             <Text>{texts.aboutMeP2}</Text>
-            <a href="https://drive.google.com/file/d/1jNYv8kmJJUOIOfNWZDZ89yaw13-zgDGA/view" target={'_blank'}>
+            <a href={texts.CV} target={'_blank'}>
               <Button border={'1px solid #080808'} _hover={{backgroundColor: '#080808', color:'#FCFBFE'}} background={'#FCFBFE'}>{texts.aboutMeButton}</Button>
             </a>
             <Text>{texts.aboutMeP3} <Link to='learning' smooth duration={500}><Text as='span' color={'#00fff7'} textDecoration='underline' _hover={{cursor: 'pointer'}}>{texts.aboutMeP4}</Text></Link></Text>
