@@ -17,7 +17,6 @@ const translations = {
         aboutMeButton: `Download CV`,
         aboutMeP3: `I'm always learning a new technology or concept. I'm currently digging`,
         aboutMeP4: `into...`,
-        cvDocument: `https://drive.google.com/file/d/1jNYv8kmJJUOIOfNWZDZ89yaw13-zgDGA/view`,
         skillsTechnologies: `Technologies`,
         skillsBackend: `Backend development`,
         skillsFrontend: `Frontend development`,
@@ -52,7 +51,7 @@ const translations = {
         modalOnDriveP1: `It's a project with the objective of creating a web application to improve the way of traveling in Argentina, sharing vehicles and reducing CO2 emissions. Within the page, a user can be a passenger and then register as a driver.`,
         modalOnDriveP2: `A passenger can join long-distance trips published by different drivers, and, through a tool, calculate the costs of a trip they want to take in case there is no driver available along with the best possible route.`,
         modalOnDriveP3: `A driver can post trips using the above named tool. Specify date, place of departure and arrival, number of seats available and obtain the cost of the trip using the tool.`,
-        CV: `https://drive.google.com/file/d/1gvfrw4UTvNOHRGnLBeOwDhINF5Z6CWCV/view`
+        CV: `https://drive.google.com/file/d/1bCm2nco8PHgffLvLQNOSZ3J6BzDJmezA/view`
     },
     es: {
         navbarHome: `Inicio`,
@@ -68,7 +67,6 @@ const translations = {
         aboutMeButton: `Descargar CV`,
         aboutMeP3: `Siempre estoy aprendiendo alguna tecnología o concepto. Actualmente estoy profundizando`,
         aboutMeP4: `en...`,
-        cvDocument: `https://drive.google.com/file/d/1jNYv8kmJJUOIOfNWZDZ89yaw13-zgDGA/view`,
         skillsTechnologies: `Tecnologías`,
         skillsBackend: `Desarrollo Backend`,
         skillsFrontend: `Desarrollo Frontend`,
@@ -103,7 +101,7 @@ const translations = {
         modalOnDriveP1: `Proyecto con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.`,
         modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
         modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`,
-        CV: `https://drive.google.com/file/d/1MfhQD7vriCOv1-vR_m989OCvV6_3lIK0/view`
+        CV: `https://drive.google.com/file/d/1GLSOVkNz3eY2XQF57ZS0RWvZoP874KkN/view`
     },
 };
 
