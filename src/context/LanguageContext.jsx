@@ -77,7 +77,7 @@ const translations = {
         Learning: `Aprendiendo`,
         LearningP1: `Dando mis primeros pasos en`,
         LearningP2: `TypeScript`,
-        LearningP3: `Profundizando en topicos más avanzados en`,
+        LearningP3: `Profundizando en tópicos más avanzados en`,
         LearningP4: `MongoDB`,
         proyects: `Proyectos`,
         proyectsCode: `Código`,
