@@ -101,7 +101,7 @@ const translations = {
         modalOnDriveP1: `Proyecto con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.`,
         modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
         modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`,
-        CV: `https://drive.google.com/file/d/1T6Tj_8DIWwWMk23ot-iB-8546OtTD3dk/view`
+        CV: `https://drive.google.com/file/d/1dZtfU0K65mRDHJqJMGWu9niOvJLSsMLc/view`
     },
 };
 
