@@ -51,7 +51,7 @@ const translations = {
         modalOnDriveP1: `It's a project with the objective of creating a web application to improve the way of traveling in Argentina, sharing vehicles and reducing CO2 emissions. Within the page, a user can be a passenger and then register as a driver.`,
         modalOnDriveP2: `A passenger can join long-distance trips published by different drivers, and, through a tool, calculate the costs of a trip they want to take in case there is no driver available along with the best possible route.`,
         modalOnDriveP3: `A driver can post trips using the above named tool. Specify date, place of departure and arrival, number of seats available and obtain the cost of the trip using the tool.`,
-        CV: `https://drive.google.com/file/d/1bCm2nco8PHgffLvLQNOSZ3J6BzDJmezA/view`
+        CV: `https://drive.google.com/file/d/1MoRJPbWMhMB8prmOBLZrmJfEIXQ2v1xs/view`
     },
     es: {
         navbarHome: `Inicio`,
@@ -101,7 +101,7 @@ const translations = {
         modalOnDriveP1: `Proyecto con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.`,
         modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
         modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`,
-        CV: `https://drive.google.com/file/d/1GLSOVkNz3eY2XQF57ZS0RWvZoP874KkN/view`
+        CV: `https://drive.google.com/file/d/1T6Tj_8DIWwWMk23ot-iB-8546OtTD3dk/view`
     },
 };
 
