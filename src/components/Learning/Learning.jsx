@@ -48,18 +48,18 @@ function Learning() {
                   }}
                 >
                   <SwiperSlide key={0}>
-                    <Image src={'/Skills/typescript.png'} w={'60px'} position='relative' top={'3px'}/>
+                    <Image src={'/Skills/nestjs.png'} w={'60px'} position='relative' top={'3px'}/>
                   </SwiperSlide>
-                  <SwiperSlide key={1}>
+                  {/* <SwiperSlide key={1}>
                     <Image src={'/Skills/mongodb2.png'} w={'150px'} transform='scale(1.2, 1.2)'/>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                 </Swiper>
               </Container>
             </Flex>
           </Flex>
           <Flex flexDir={'column'} rowGap={5} align='center' justify={'center'} minW={{md: '365px', lg: '500px'}} maxW={{md: '370px', lg: '500px'}}>
             <Text fontSize={'20px'}>{texts.LearningP1} <Text as='span' color='#00fff7'>{texts.LearningP2}</Text>.</Text>
-            <Text fontSize={'20px'}>{texts.LearningP3} <Text as='span' color='#00fff7'>{texts.LearningP4}</Text>.</Text>
+            <Text fontSize={'20px'}>{texts.LearningP3} <Text as='span' color='#00fff7'>{texts.LearningP4}</Text></Text>
           </Flex>
         </Flex>
     </Flex>
