@@ -60,7 +60,7 @@ function Learning() {
           </Flex>
           <Flex flexDir={'column'} rowGap={5} align='center' justify={'center'} minW={{md: '365px', lg: '500px'}} maxW={{md: '370px', lg: '500px'}}>
             <Text fontSize={'20px'}>{texts.LearningP1} <Text as='span' color='#00fff7'>{texts.LearningP2}</Text>{texts.LearningP5}<Text as='span' color='#00fff7'>{texts.LearningP6}</Text>.</Text>
-            <Text fontSize={'20px'}>{texts.LearningP3} <Text as='span' color='#00fff7'>{texts.LearningP4}</Text>.</Text>
+            <Text fontSize={'20px'}>{texts.LearningP3} <Text as='span' color='#00fff7'>{texts.LearningP4}</Text></Text>
           </Flex>
         </Flex>
     </Flex>
