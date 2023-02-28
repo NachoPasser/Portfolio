@@ -82,6 +82,7 @@ function OnDrive() {
               <ProyectSkill skill={'PostgreSQL'}/>
               <ProyectSkill skill={'JWT'}/>
               <ProyectSkill skill={'Bcrypt'}/>
+              <ProyectSkill skill={'MercadoPago API'}/>
             </Flex>
             <Text textAlign={'left'} mb={2}>{texts.modalOnDriveP1}</Text>
             <Text textAlign={'left'} mb={2}>{texts.modalOnDriveP2}</Text>

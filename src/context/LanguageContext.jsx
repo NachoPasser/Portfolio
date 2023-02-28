@@ -51,7 +51,7 @@ const translations = {
         modalHenryAskP2: `It was developed for students and graduates of SoyHenry, but for now anyone can join it.`,
         modalDogsApp: `It's an interactive SPA where the user can consult different breeds of dogs that came from https://thedogapi.com/. This breeds can be filtered, ordered and look up by name. The user can also create his own breed.`,
         modalOnDriveP1: `It's a project with the objective of creating a web application to improve the way of traveling in Argentina, sharing vehicles and reducing CO2 emissions. Within the page, a user can be a passenger and then register as a driver.`,
-        modalOnDriveP2: `A passenger can join long-distance trips published by different drivers, and, through a tool, calculate the costs of a trip they want to take in case there is no driver available along with the best possible route.`,
+        modalOnDriveP2: `A passenger can join long-distance trips published by different drivers paying by MercadoPago, and, through a tool, calculate the costs of a trip they want to take in case there is no driver available along with the best possible route.`,
         modalOnDriveP3: `A driver can post trips using the above named tool. Specify date, place of departure and arrival, number of seats available and obtain the cost of the trip using the tool.`,
         CV: `https://drive.google.com/file/d/1MoRJPbWMhMB8prmOBLZrmJfEIXQ2v1xs/view`
     },
@@ -103,7 +103,7 @@ const translations = {
         modalHenryAskP2: `Fue desarrollada para alumnos y egresados de SoyHenry, pero de momento cualquier persona puede ingresar a la misma.`,
         modalDogsApp: `Es una SPA interactiva donde el usuario puede consultar diferentes razas de perro provenientes de https://thedogapi.com/. Estás razas pueden ser filtradas, ordenadas y buscadas por nombre. Además el usuario puede crear su propia raza.`,
         modalOnDriveP1: `Proyecto con el objetivo de crear una aplicación web para mejorar la forma de viajar por Argentina, compartiendo vehículos y reduciendo la emisión de CO2. Dentro de la página, un usuario puede ser pasajero y luego registrarse como conductor.`,
-        modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
+        modalOnDriveP2: `Un pasajero puede sumarse a viajes de larga distancia publicados por diferentes conductor pagando por medio de MercadoPago, y, a través de una herramienta, calcular los costos de un viaje que quiera realizar por si no hay un conductor disponible junto a la mejor ruta posible.`,
         modalOnDriveP3: `Un conductor puede publicar viajes utilizando la herramienta anteriormente nombrada. Especifica fecha, lugar de salida y llegada, numero de asientos disponibles y obtiene el costo del viaje mediante la herramienta.`,
         CV: `https://drive.google.com/file/d/1dZtfU0K65mRDHJqJMGWu9niOvJLSsMLc/view`
     },
