@@ -26,39 +26,18 @@ function DogsApp() {
   const {texts} = useContext(LanguageContext)
   return (
     <>
-    
-    <Flex flexDir={'column'} gap={5} justify='center' align={'center'}>
-          <Image src='/Proyects/DogsApp/Home.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'0% 100%'} />
-          <Text fontSize={'18px'} fontWeight={600}>Dogs App</Text>
-          <Flex align={'center'} justify='center' gap={3}>
-            <Link href='https://github.com/NachoPasser/PI-Dogs' isExternal _hover={{textDecoration:'none'}}>
-              <Flex align={'center'} justify='center'  className='hover' gap={1}>
-                <FaGithub
-                size={30}
-                stroke='currentColor'
-                fill='currentColor'
-                />
-                <Text>{texts.proyectsCode}</Text>
-              </Flex>
-            </Link>
-            <Link href='https://pi-dogs-ignaciopasserini.vercel.app/' isExternal _hover={{textDecoration:'none'}}>
-              <Flex align={'center'} justify='center' className='hover' gap={1}>
-                <BiLinkExternal
-                size={30}
-                stroke='currentColor'
-                fill='currentColor'
-                />
-                <Text>{texts.proyectsDemo}</Text>
-              </Flex>
-            </Link>
-          </Flex>
-          <Button textColor={'#00fff7'} background='#FCFBFE' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen}>Ver más detalle</Button>
-    </Flex>
-    <Modal
-        isOpen={isOpen}
-        onClose={onClose}
-        isCentered
-        scrollBehavior='inside'>
+      <Text textAlign={'left'}fontSize={'xl'} fontWeight={500}>Dogs App - Desarrollador Full Stack (académico)</Text>
+      <Text textAlign={'left'} >Jun 2022 - Jun 2022</Text>
+      <Text></Text>
+      <Text textAlign={'left'}>• Idear y diseñar una aplicación donde puedas buscar, filtrar, ordenar y crear razas de perros.</Text>
+      <Text textAlign={'left'}>• Desarrollar la interfaz de usuario usando JavaScript, React, Redux, HTML y CSS.</Text>
+      <Text textAlign={'left'}>• Construir el servidor creando rutas para obtener perros de la API o base de datos y otra para crear perros en la base de datos usando Node.js, Express.js y Sequelize.</Text>
+      <Button textColor={'#00fff7'} background='#233554' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen} mt={2}>Ver más detalle</Button>
+      <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      isCentered
+      scrollBehavior='inside'>
         <ModalOverlay />
         <ModalContent w={'100%'} h='fit-content' maxW={'1200px'} marginInline={{base: 2, sm: 5}} >
           <ModalHeader position={'relative'} top={2}>Dogs App</ModalHeader>

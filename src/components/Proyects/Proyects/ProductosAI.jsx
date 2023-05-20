@@ -24,21 +24,21 @@ import { BiLinkExternal } from 'react-icons/bi'
 import CustomSlider from './CustomSlider/CustomSlider'
 import ProyectSkill from './ProyectSkill/ProyectSkill'
 
-function HenryAsk() {
+function ProductosAI() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const {texts} = useContext(LanguageContext)
   const [largerThan756px] = useMediaQuery('(min-width: 756px)')
   return (
     <>
-    <Flex flexDir={'column'} gap={2} justifyContent={'flex-start'} alignItems={'flex-start'}>
-      <Text textAlign={'left'}fontSize={'xl'} fontWeight={500}>Henry Ask - Desarrollador Full Stack (académico)</Text>
-      <Text textAlign={'left'}>Dec 2022 - Ene 2023</Text>
-      <Text textAlign={'left'}>En este proyecto, lideré el desarrollo y gestioné las tareas del equipo utilizando herramientas como Trello y Discord.</Text>
-      <Text textAlign={'left'}>Diseñé la base de datos y desarrollé el servidor con rutas para la creación, actualización y obtención de datos, tales como publicaciones, usuarios y respuestas usando Node.js, Express.js y Mongoose.</Text>
-      <Text textAlign={'left'}>También trabajé en la autenticación y autorización de usuarios, utilizando Firebase. Implementé medidas de seguridad para proteger ciertas rutas, asegurándome de que solo los usuarios registrados o los administradores tuvieran acceso a ellas.</Text>
-      <Text textAlign={'left'}>Por último, participé en el diseño responsive utilizando JavaScript, React, Redux y ChakraUI.</Text>
+      <Text textAlign={'left'}fontSize={'xl'} fontWeight={500}>Productos-AI - Desarrollador Full Stack</Text>
+      <Text textAlign={'left'} >Abr 2023 - May 2023</Text>
+      <Text textAlign={'left'}>• Liderar desarrollo de proyecto y manejar las tareas del equipo mediante Trello y Discord.</Text>
+      <Text textAlign={'left'}>• Diseñar base de datos y desarrollar servidor con rutas para crear, actualizar y obtener datos como posts,
+      usuarios, respuestas mediante Node.js, Express.js y Mongoose. Trabajar en la autenticación y autorización
+      de usuarios mediante Firebase. Proteger ciertas rutas de forma que solo usuarios logueados o
+      administradores puedan usarlas.</Text>
+      <Text textAlign={'left'}>• Realizar diseño responsive mediante JavaScript, React, Redux y ChakraUI.</Text>
       <Button textColor={'#00fff7'} background='#233554' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen} mt={2}>Ver más detalle</Button>
-    </Flex>
       <Modal
       isOpen={isOpen}
       onClose={onClose}
@@ -105,4 +105,4 @@ function HenryAsk() {
   )
 }
 
-export default HenryAsk
+export default ProductosAI

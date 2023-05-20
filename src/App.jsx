@@ -13,13 +13,13 @@ import './App.css'
 function App() {
   const [px875] = useMediaQuery('(max-height: 800px)')
   return (
-    <Grid className="App" rowGap={px875 ? 200 : 100}>
+    <Grid className="App">
       <LanguageProvider>
         <NavBar/>
         <Home/>
         <AboutMe/>
         <Skills />
-        <Learning/>
+        {/* <Learning/> */}
         <Proyects />
         <Contact/>
         <Footer />

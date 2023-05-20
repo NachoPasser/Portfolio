@@ -30,35 +30,17 @@ function OnDrive() {
   const [largerThan756px] = useMediaQuery('(min-width: 756px)')
   return (
     <>
-    
-    <Flex flexDir={'column'} gap={5} justify='center' align={'center'}>
-          <Image src='/Proyects/OnDrive/Home.png' w={{base: '300px', md:'400px'}} h={{base: '150', md:'200px'}} objectFit={'cover'} objectPosition={'100% 0%'}/>
-          <Text fontSize={'18px'} fontWeight={600}>On Drive</Text>
-          <Flex align={'center'} justify='center' gap={3}>
-            <Link href='https://github.com/NachoPasser/OnDrive' isExternal _hover={{textDecoration:'none'}}>
-            <Flex align={'center'} justify='center'  className='hover' gap={1}>
-              <FaGithub
-              size={30}
-              stroke='currentColor'
-              fill='currentColor'
-              />
-              <Text>{texts.proyectsCode}</Text>
-            </Flex>
-            </Link>
-            <Link href='https://www.youtube.com/watch?v=8JYQKiN6lv4' isExternal _hover={{textDecoration:'none'}}>
-            <Flex align={'center'} justify='center' className='hover' gap={1}>
-              <AiOutlineYoutube
-              size={30}
-              stroke='currentColor'
-              fill='currentColor'
-              />
-              <Text>{texts.proyectsVideo}</Text>
-            </Flex>
-            </Link>
-          </Flex>
-          <Button textColor={'#00fff7'} background='#FCFBFE' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen}>Ver más detalle</Button>
-    </Flex>
-    <Modal
+      <Text textAlign={'left'}fontSize={'xl'} fontWeight={500}>On Drive - Desarrollador Full Stack (académico)</Text>
+      <Text textAlign={'left'} >Jul 2022 - Ago 2022</Text>
+      <Text></Text>
+      <Text textAlign={'left'}>• Liderar desarrollo de proyecto y manejar las tareas del equipo mediante Trello y Discord.</Text>
+      <Text textAlign={'left'}>• Diseñar base de datos y desarrollar el servidor con rutas para crear, actualizar y obtener datos como viajes
+      y usuarios mediante Node.js, Express.js y Sequelize. Trabajar en la autenticación y autorización de
+      usuarios mediante JWT. Proteger las rutas de acuerdo con el rol del usuario (visitante, pasajero, conductor
+      o administrador).</Text>
+      <Text textAlign={'left'}>• Integrar funcionalidades de la interfaz mediante JavaScript, React, Redux.</Text>
+      <Button textColor={'#00fff7'} background='#233554' border='1px solid #00fff7' _hover={{background: '#00fff7', color: 'white'}} onClick={onOpen}  mt={2}>Ver más detalle</Button>
+      <Modal
         isOpen={isOpen}
         onClose={onClose}
         isCentered

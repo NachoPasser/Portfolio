@@ -24,8 +24,8 @@ function Skills() {
     orgSkills: 'none'
   })
   const [skills, setSkills] = useState({
-    frontendSkills: [create('HTML'), create('CSS'), create('JavaScript'), create('React'), create('Redux'), create('ChakraUI')],
-    backendSkills: [create('NodeJS'), create('Express'), create('MongoDB'), create('Mongoose'), create('PostgreSQL'), create('Sequelize'), create('JWT'), create('Firebase')],
+    frontendSkills: [create('HTML'), create('CSS'), create('JavaScript'), create('React'), create('Redux'), create('ChakraUI'), create('Tailwind CSS')],
+    backendSkills: [create('NodeJS'), create('Express'), create('MongoDB'), create('Mongoose'), create('PostgreSQL'), create('Sequelize'), create('JWT'), create('Firebase'),create('AWS Lambda'), create('AWS DynamoDB'), create('AWS S3')],
     orgSkills: [create('Slack'), create('Trello'), create('Discord'), create('Scrum')],
     devSkills: [create('Git'), create('GitHub'), create('Postman'), create('Figma')],
   })
@@ -45,10 +45,10 @@ function Skills() {
 
 
   return (
-    <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'} pt='80px'>
+    <Flex id='skills' as='section' flexDir='column' justify={'center'} align='center' gap={5} w='100%' minH={'100vh'}>
         <Text fontSize={'24px'}>{texts.navbarSkills} 🛠️</Text>
         {/* Tecnologias */}
-        <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5}>
+        <Flex flexDir={'column'} w='85%' maxW={'880px'} gap={5} borderTop={'1px solid #00fff7'} pt={10}>
             <Text textAlign={'left'} fontSize='20px' textDecor={'underline'} textDecorationColor="#00fff7">{texts.skillsTechnologies}</Text>
             <Flex gap={5} alignItems={'center'} justifyContent='space-between' _hover={{color: '#00fff7', cursor:'pointer'}} onClick={() => changeVisibilitySkill('backendSkills')}>
                 <IoServerOutline size={30} stroke='#00fff7' fill='#00fff7'/>
