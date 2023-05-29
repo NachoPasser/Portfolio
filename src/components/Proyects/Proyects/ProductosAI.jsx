@@ -121,11 +121,8 @@ function ProductosAI() {
               </Flex>
               <Text textAlign={"left"}>
                 {texts.modalProductosAI}
-                {/* <Text as={largerThan756px ? "span" : "p"} textAlign={"left"}>
-                  {texts.modalHenryAskP2}
-                </Text> */}
               </Text>
-              {/* <Flex
+              <Flex
                 align={"center"}
                 justify="center"
                 gap={{ base: 5, md: 10 }}
@@ -134,26 +131,7 @@ function ProductosAI() {
                 fontSize={{ base: "16px", md: "20px" }}
               >
                 <Link
-                  href="https://github.com/PedroMtz8/HenryAsk"
-                  isExternal
-                  _hover={{ textDecoration: "none" }}
-                >
-                  <Flex
-                    align={"center"}
-                    justify="center"
-                    className="hover"
-                    gap={1}
-                  >
-                    <FaGithub
-                      size={30}
-                      stroke="currentColor"
-                      fill="currentColor"
-                    />
-                    <Text>{texts.proyectsCode}</Text>
-                  </Flex>
-                </Link>
-                <Link
-                  href="https://www.youtube.com/watch?v=we7yBrXE4Kk"
+                  href="https://www.youtube.com/watch?v=024ytO5fLzI"
                   isExternal
                   _hover={{ textDecoration: "none" }}
                 >
@@ -171,26 +149,7 @@ function ProductosAI() {
                     <Text>{texts.proyectsVideo}</Text>
                   </Flex>
                 </Link>
-                <Link
-                  href="https://henry-ask.vercel.app/"
-                  isExternal
-                  _hover={{ textDecoration: "none" }}
-                >
-                  <Flex
-                    align={"center"}
-                    justify="center"
-                    className="hover"
-                    gap={1}
-                  >
-                    <BiLinkExternal
-                      size={30}
-                      stroke="currentColor"
-                      fill="currentColor"
-                    />
-                    <Text>{texts.proyectsDemo}</Text>
-                  </Flex>
-                </Link>
-              </Flex> */}
+              </Flex>
             </Flex>
           </ModalBody>
           <ModalFooter></ModalFooter>
