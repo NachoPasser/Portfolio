@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
 import {
   Flex,
   Text,
   Image,
+  Box,
+  Grid,
   Link,
   Button,
-  useDisclosure,
+  useMediaQuery,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -13,16 +14,20 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
+import React, { useContext } from "react";
 import { LanguageContext } from "../../../context/LanguageContext";
 import { FaGithub } from "react-icons/fa";
+import { AiOutlineYoutube } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import CustomSlider from "./CustomSlider/CustomSlider";
 import ProyectSkill from "./ProyectSkill/ProyectSkill";
 
-function DogsApp() {
+function ProductosAI() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { texts } = useContext(LanguageContext);
+  const [largerThan756px] = useMediaQuery("(min-width: 756px)");
   return (
     <>
       <Flex
@@ -30,19 +35,25 @@ function DogsApp() {
         gap={2}
         justifyContent={"flex-start"}
         alignItems={"flex-start"}
+        fontSize={'16px'}
       >
         <Text textAlign={"left"} fontSize={"xl"} fontWeight={500}>
-        {texts.experienceDogsAppTitle}
-        </Text>
-        <Text textAlign={"left"}>{texts.experienceDogsAppDate}</Text>
-        <Text textAlign={"left"}>
-        {texts.experienceDogsAppDetail1}
+          {texts.experienceProductosAITitle}
         </Text>
         <Text textAlign={"left"}>
-        {texts.experienceDogsAppDetail2}
+        {texts.experienceProductosAIDate}
         </Text>
         <Text textAlign={"left"}>
-        {texts.experienceDogsAppDetail3}
+        {texts.experienceProductosAIDetail1}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceProductosAIDetail2}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceProductosAIDetail3}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceProductosAIDetail4}
         </Text>
         <Button
           textColor={"#00fff7"}
@@ -69,18 +80,18 @@ function DogsApp() {
           marginInline={{ base: 2, sm: 5 }}
         >
           <ModalHeader position={"relative"} top={2}>
-            Dogs App
+            Productos-AI
           </ModalHeader>
           <ModalCloseButton _hover={{ color: "#00fff7" }} />
           <ModalBody paddingInline="0" pt="20px">
             <CustomSlider
               sliderData={[
-                "/Proyects/DogsApp/LandingPage.png",
-                "/Proyects/DogsApp/Home.png",
-                "/Proyects/DogsApp/Detail.png",
-                "/Proyects/DogsApp/Form.png",
+                "/Proyects/ProductosAI/Home.png",
+                "/Proyects/ProductosAI/UploadFile.png",
+                "/Proyects/ProductosAI/Sources.png",
+                "/Proyects/ProductosAI/Analysis.png",
               ]}
-              flexSize={[1.9875, 1.9854, 1.9875, 1, 9917]}
+              flexSize={[1.9917, 1.9917, 1.9917, 1.9917]}
               isOpen={isOpen}
             />
             <Flex
@@ -97,15 +108,20 @@ function DogsApp() {
                 justify={"flex-start"}
                 flexWrap="wrap"
               >
-                <ProyectSkill skill={"CSS modules"} />
-                <ProyectSkill skill={"React"} />
-                <ProyectSkill skill={"Redux"} />
                 <ProyectSkill skill={"Node.js"} />
-                <ProyectSkill skill={"Express"} />
-                <ProyectSkill skill={"Sequelize"} />
-                <ProyectSkill skill={"PostgreSQL"} />
+                <ProyectSkill skill={"Python"} />
+                <ProyectSkill skill={"AWS Lambda"} />
+                <ProyectSkill skill={"AWS DynamoDB"} />
+                <ProyectSkill skill={"AWS S3"} />
+                <ProyectSkill skill={"OpenAI API"} />
+                <ProyectSkill skill={"JWT"} />
+                <ProyectSkill skill={"React"} />
+                <ProyectSkill skill={"Redux-toolkit"} />
+                <ProyectSkill skill={"Tailwind CSS"} />
               </Flex>
-              <Text textAlign={"left"}>{texts.modalDogsApp}</Text>
+              <Text textAlign={"left"}>
+                {texts.modalProductosAI}
+              </Text>
               <Flex
                 align={"center"}
                 justify="center"
@@ -115,7 +131,7 @@ function DogsApp() {
                 fontSize={{ base: "16px", md: "20px" }}
               >
                 <Link
-                  href="https://github.com/NachoPasser/PI-Dogs"
+                  href="https://www.youtube.com/watch?v=024ytO5fLzI"
                   isExternal
                   _hover={{ textDecoration: "none" }}
                 >
@@ -125,31 +141,12 @@ function DogsApp() {
                     className="hover"
                     gap={1}
                   >
-                    <FaGithub
+                    <AiOutlineYoutube
                       size={30}
                       stroke="currentColor"
                       fill="currentColor"
                     />
-                    <Text>{texts.proyectsCode}</Text>
-                  </Flex>
-                </Link>
-                <Link
-                  href="https://pi-dogs-ignaciopasserini.vercel.app/"
-                  isExternal
-                  _hover={{ textDecoration: "none" }}
-                >
-                  <Flex
-                    align={"center"}
-                    justify="center"
-                    className="hover"
-                    gap={1}
-                  >
-                    <BiLinkExternal
-                      size={30}
-                      stroke="currentColor"
-                      fill="currentColor"
-                    />
-                    <Text>{texts.proyectsDemo}</Text>
+                    <Text>{texts.proyectsVideo}</Text>
                   </Flex>
                 </Link>
               </Flex>
@@ -162,4 +159,4 @@ function DogsApp() {
   );
 }
 
-export default DogsApp;
+export default ProductosAI;
