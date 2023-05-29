@@ -35,33 +35,25 @@ function ProductosAI() {
         gap={2}
         justifyContent={"flex-start"}
         alignItems={"flex-start"}
+        fontSize={'16px'}
       >
         <Text textAlign={"left"} fontSize={"xl"} fontWeight={500}>
-          Productos-AI - Desarrollador Full Stack
-        </Text>
-        <Text textAlign={"left"}>Abr 2023 - May 2023</Text>
-        <Text textAlign={"left"}>
-          Participé activamente en el proceso de desarrollo, aportando ideas de
-          manera proactiva e investigando diversas posibilidades para mejorar la
-          plataforma o solucionar problemas potenciales.
+          {texts.experienceProductosAITitle}
         </Text>
         <Text textAlign={"left"}>
-          Me encargué de crear el flujo para analizar los Excel.
+        {texts.experienceProductosAIDate}
         </Text>
         <Text textAlign={"left"}>
-          Desde el lado del servidor, cree funciones lambda usando Python para
-          obtener y formatear los archivos Excel, realizar un preanálisis de los
-          mismos para validar ciertas condiciones y, posteriormente, analizarlos
-          utilizando Chat-GPT para obtener los aspectos positivos y negativos y,
-          finalmente, generar las oportunidades de mejora a partir de estos.
-          Todo esto usando AWS (Lambda, DynamoDB y S3), JWT y la API de OpenAI.
+        {texts.experienceProductosAIDetail1}
         </Text>
         <Text textAlign={"left"}>
-          Desde la interfaz, cree los componentes necesarios para que el usuario
-          puede cargar un Excel que contenga reseñas sobre su producto y ver los
-          aspectos positivos, aspectos negativos y las oportunidades de mejora
-          del mismo. Además de ser notificado ante cualquier error. Todo esto
-          usando React, TailwindCSS y Redux-toolkit.
+        {texts.experienceProductosAIDetail2}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceProductosAIDetail3}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceProductosAIDetail4}
         </Text>
         <Button
           textColor={"#00fff7"}
@@ -71,7 +63,7 @@ function ProductosAI() {
           onClick={onOpen}
           mt={2}
         >
-          Ver más detalle
+          {texts.experienceButton}
         </Button>
       </Flex>
       <Modal
@@ -94,11 +86,12 @@ function ProductosAI() {
           <ModalBody paddingInline="0" pt="20px">
             <CustomSlider
               sliderData={[
-                "/Proyects/HenryAsk/LandingPage.png",
-                "/Proyects/HenryAsk/Login.png",
-                "/Proyects/HenryAsk/Home.png",
+                "/Proyects/ProductosAI/Home.png",
+                "/Proyects/ProductosAI/UploadFile.png",
+                "/Proyects/ProductosAI/Sources.png",
+                "/Proyects/ProductosAI/Analysis.png",
               ]}
-              flexSize={[1.9917, 1.9741, 1.9618]}
+              flexSize={[1.9917, 1.9917, 1.9917, 1.9917]}
               isOpen={isOpen}
             />
             <Flex
@@ -127,7 +120,7 @@ function ProductosAI() {
                 <ProyectSkill skill={"Tailwind CSS"} />
               </Flex>
               <Text textAlign={"left"}>
-                {texts.modalProductosAI}{" "}
+                {texts.modalProductosAI}
                 {/* <Text as={largerThan756px ? "span" : "p"} textAlign={"left"}>
                   {texts.modalHenryAskP2}
                 </Text> */}

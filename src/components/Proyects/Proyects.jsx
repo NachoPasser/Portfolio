@@ -13,7 +13,7 @@ import {
 function Proyects() {
   const { texts } = useContext(LanguageContext);
   const smallerThan1468 = useMediaQuery("(max-width: 1468px)");
-  const [active, setActive] = useState({ experience: "Henry Ask", id: 1 });
+  const [active, setActive] = useState({ experience: "Productos AI", id: 0 });
   const experiencies = ["Productos AI", "Henry Ask", "On Drive", "Dogs App"];
   const showActive = () => {
     switch (active.experience) {

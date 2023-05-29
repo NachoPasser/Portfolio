@@ -37,28 +37,20 @@ function OnDrive() {
         alignItems={"flex-start"}
       >
         <Text textAlign={"left"} fontSize={"xl"} fontWeight={500}>
-          On Drive - Desarrollador Full Stack (académico)
+          {texts.experienceOnDriveTitle}
         </Text>
-        <Text textAlign={"left"}>Jul 2022 - Ago 2022</Text>
-        <Text></Text>
+        <Text textAlign={"left"}>{texts.experienceOnDriveDate}</Text>
         <Text textAlign={"left"}>
-          En este proyecto, lideré el desarrollo y gestioné las tareas del
-          equipo utilizando herramientas como Trello y Discord.
+        {texts.experienceOnDriveDetail1}
         </Text>
         <Text textAlign={"left"}>
-          Participe en el diseño de la base de datos y desarrollo del servidor
-          con rutas para la creación, actualización y obtención de datos, tales
-          como viajes y usuarios usando Node.js, Express.js y Sequelize.
+        {texts.experienceOnDriveDetail2}
         </Text>
         <Text textAlign={"left"}>
-          También trabajé en la autenticación y autorización de usuarios,
-          utilizando JWT. Implementé medidas de seguridad para proteger ciertas
-          rutas de acuerdo al rol del usuario (visitante, pasajero, conductor o
-          administrador).
+        {texts.experienceOnDriveDetail3}
         </Text>
         <Text textAlign={"left"}>
-          Por último, integré diferentes funcionalidades en la interfaz de
-          usuario utilizando JavaScript, React, Redux y CSS.
+        {texts.experienceOnDriveDetail4}
         </Text>
         <Button
           textColor={"#00fff7"}
@@ -68,7 +60,7 @@ function OnDrive() {
           onClick={onOpen}
           mt={2}
         >
-          Ver más detalle
+          {texts.experienceButton}
         </Button>
       </Flex>
       <Modal

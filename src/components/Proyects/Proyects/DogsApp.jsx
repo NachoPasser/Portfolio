@@ -32,21 +32,17 @@ function DogsApp() {
         alignItems={"flex-start"}
       >
         <Text textAlign={"left"} fontSize={"xl"} fontWeight={500}>
-          Dogs App - Desarrollador Full Stack (académico)
+        {texts.experienceDogsAppTitle}
         </Text>
-        <Text textAlign={"left"}>Jun 2022 - Jun 2022</Text>
+        <Text textAlign={"left"}>{texts.experienceDogsAppDate}</Text>
         <Text textAlign={"left"}>
-          En este proyecto, ideé y diseñé una aplicación donde uno puede buscar,
-          filtrar, ordenar y crear razas de perros.
-        </Text>
-        <Text textAlign={"left"}>
-          Desarrollé la interfaz de usuario usando JavaScript, React, Redux,
-          HTML y CSS.
+        {texts.experienceDogsAppDetail1}
         </Text>
         <Text textAlign={"left"}>
-          Construí el servidor creando rutas para obtener perros de la API o
-          base de datos y otra para crear perros en la base de datos usando
-          Node.js, Express.js y Sequelize.
+        {texts.experienceDogsAppDetail2}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceDogsAppDetail3}
         </Text>
         <Button
           textColor={"#00fff7"}
@@ -56,7 +52,7 @@ function DogsApp() {
           onClick={onOpen}
           mt={2}
         >
-          Ver más detalle
+          {texts.experienceButton}
         </Button>
       </Flex>
       <Modal

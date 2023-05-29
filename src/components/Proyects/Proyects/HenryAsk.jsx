@@ -37,28 +37,20 @@ function HenryAsk() {
         alignItems={"flex-start"}
       >
         <Text textAlign={"left"} fontSize={"xl"} fontWeight={500}>
-          Henry Ask - Desarrollador Full Stack (académico)
+        {texts.experienceHenryAskTitle}
         </Text>
-        <Text textAlign={"left"}>Dec 2022 - Ene 2023</Text>
+        <Text textAlign={"left"}>{texts.experienceHenryAskDate}</Text>
         <Text textAlign={"left"}>
-          En este proyecto, lideré el desarrollo y gestioné las tareas del
-          equipo utilizando herramientas como Trello y Discord.
-        </Text>
-        <Text textAlign={"left"}>
-          Diseñé la base de datos y desarrollé el servidor con rutas para la
-          creación, actualización y obtención de datos, tales como
-          publicaciones, usuarios y respuestas usando Node.js, Express.js y
-          Mongoose.
+        {texts.experienceHenryAskDetail1}
         </Text>
         <Text textAlign={"left"}>
-          También trabajé en la autenticación y autorización de usuarios,
-          utilizando Firebase. Implementé medidas de seguridad para proteger
-          ciertas rutas, asegurándome de que solo los usuarios registrados o los
-          administradores tuvieran acceso a ellas.
+        {texts.experienceHenryAskDetail2}
         </Text>
         <Text textAlign={"left"}>
-          Por último, participé en el diseño responsive utilizando JavaScript,
-          React, Redux y ChakraUI.
+        {texts.experienceHenryAskDetail3}
+        </Text>
+        <Text textAlign={"left"}>
+        {texts.experienceHenryAskDetail4}
         </Text>
         <Button
           textColor={"#00fff7"}
@@ -68,7 +60,7 @@ function HenryAsk() {
           onClick={onOpen}
           mt={2}
         >
-          Ver más detalle
+          {texts.experienceButton}
         </Button>
       </Flex>
       <Modal
